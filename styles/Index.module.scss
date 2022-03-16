@@ -18,6 +18,7 @@
         font-size: 1.6rem;
         margin-bottom: 60px;
         color: #737ebe;
+        padding: 0px 20px;
     }
     > button {
         background: linear-gradient(45deg, #4567BE 0%, #173EA5 100%);
@@ -47,4 +48,21 @@
     transform: translate(250px, -300px) rotate(0deg);
     background: linear-gradient(90deg, #12123062 0%, #26376d88 100%);
     filter: blur(100px);
+}
+
+
+@media  screen and (max-width: 1200px) {
+    .main {
+        > h1 {
+            font-size: 3.5rem;
+        }
+        > h2 {
+            font-size: 1.4rem;
+        }
+    }
+    .gradiant {
+        width: 600px;
+        transform: translate(50px, -200px);
+        height: 600px;
+    }
 }
