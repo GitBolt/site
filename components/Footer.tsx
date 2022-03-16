@@ -8,7 +8,6 @@ import GitHub from '../public/icons/github.svg';
 import Devto from '../public/icons/devto.svg';
 
 export const Footer = function Footer() {
-  console.log(1);
   return (
     <footer className={styles.footer}>
       <span>SYED AABIS AKHTAR | 2022 &#169;</span>
