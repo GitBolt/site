@@ -1,7 +1,9 @@
-import '@/styles/globals.scss'
+import React from 'react';
+import '@/styles/globals.scss';
+import type { AppProps } from 'next/app';
 
-function Site({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const Site = function Site({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />;
+};
 
-export default Site
+export default Site;
