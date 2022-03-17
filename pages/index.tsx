@@ -25,7 +25,7 @@ const Index: NextPage = function Index() {
           className="text-white"
           style={colour ? { color: colour, textShadow: `1px 1px 20px ${colour}70` } : {}}
         >
-          Nothing here yet...
+          Prince more like Princess
 
         </h1>
         <h2 className="text-white">How about you click the button below till then for absolutely no reason?</h2>
