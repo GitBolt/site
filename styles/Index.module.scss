@@ -1,41 +1,57 @@
+@import 'mixins/buttons.scss';
+
 .index {
     background-color: #0d0e1b;
     height: 100vh;
     width: 100vw;
-    display: grid;
-    place-items: center;
 }
 
 .main {
-    text-align: center;
-    margin-bottom: 5%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, .5fr);
+    grid-template-rows: repeat(5, 1fr);
     > h1 {
-        font-size: 5rem;
-        font-weight: 600;
-        margin-bottom: 60px;
+        grid-row: 2/3;
+        grid-column: 1;
+        justify-self: flex-start;
+        align-self: center;
+        margin-left: 15%;
+        width: 90%;
     }
-    > h2 {
-        font-size: 1.6rem;
-        margin-bottom: 60px;
-        color: #737ebe;
-        padding: 0px 20px;
+    > p {
+        grid-row: 3/3;
+        grid-column: 1;
+        justify-self: flex-start;
+        align-self: flex-start;
+        line-height: 3.5rem;
+        margin-left: 15%;
+        width: 70%;
     }
-    > button {
-        background: linear-gradient(45deg, #4567BE 0%, #173EA5 100%);
-        color: white;
-        border-radius: 1.2rem;
-        font-size: 1.5rem;
-        padding: 15px 50px;
-        font-weight: 500;
-        transition: 200ms ease-out;
-        &:hover {
-            box-shadow: 0px 0px 30px #123085b9;
-            filter: brightness(120%);
-        }
-        &:active {
-            transform: scale(.95);
-        }
+    > .buttons {
+        grid-row: 4/5;
+        grid-column: 1;
+        margin-left: 15%;
+        align-self: flex-start;
+        gap: 4rem;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
     }
+    > .animation {
+        grid-row: 2/4;
+        grid-column: 2;
+        align-self: center;
+    }
+}
+
+.projects {
+    @include primary_button(1.5rem, 12rem);
+    font-size: 2.25rem;
+}
+.blog {
+    @include secondary_button(1.5rem, 12rem);
+    font-size: 2.25rem;
 }
 
 .gradiant {
@@ -48,25 +64,4 @@
     transform: translate(250px, -300px) rotate(0deg);
     background: linear-gradient(90deg, #12123062 0%, #26376d88 100%);
     filter: blur(100px);
-}
-
-
-@media  screen and (max-width: 1200px) {
-    .main {
-        > h1 {
-            font-size: 3.2rem;
-        }
-        > h2 {
-            font-size: 1.3rem;
-        }
-        > button {
-            font-size: 1.2rem;
-            padding: 10px 40px;
-        }
-    }
-    .gradiant {
-        width: 500px;
-        transform: translate(150px, -200px);
-        height: 500px;
-    }
 }

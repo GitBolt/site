@@ -2,16 +2,16 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '@/styles/Footer.module.scss';
-import Twitter from '../public/icons/twitter.svg';
-import Discord from '../public/icons/discord.svg';
-import GitHub from '../public/icons/github.svg';
-import Devto from '../public/icons/devto.svg';
+import Twitter from '@/public/icons/twitter.svg';
+import Discord from '@/public/icons/discord.svg';
+import GitHub from '@/public/icons/github.svg';
+import Devto from '@/public/icons/devto.svg';
 
 export const Footer = function Footer() {
   return (
     <footer className={styles.footer}>
       <span>SYED AABIS AKHTAR | 2022 &#169;</span>
-      <div className="flex gap-5">
+      <div className="flex gap-3">
 
         <Link href="https://twitter.com/0xBolt" passHref>
           <a target="_blank" rel="noopener noreferrer">

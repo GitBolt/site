@@ -1,0 +1,28 @@
+@mixin primary_button($height, $width) {
+    background: linear-gradient(270deg, #173EA5 26.5%, #4567BE 100%);
+    color: white;
+    padding: $height $width;
+    text-align: center;
+    border-radius: 1em;
+    transition: all .2s ease-in-out;
+    font-weight: 800;
+    &:hover {
+        cursor: pointer;
+        transform: translate(0px, -.5rem);
+    }
+}
+
+@mixin secondary_button($height, $width) {
+    background: transparent;
+    color: #173EA5;
+    padding: $height $width;
+    border: 2px solid #173EA5;
+    text-align: center;
+    border-radius: 1em;
+    transition: all .2s ease-in-out;
+    font-weight: 800;
+    &:hover {
+        cursor: pointer;
+        transform: translate(0px, -.5rem);
+    }
+}

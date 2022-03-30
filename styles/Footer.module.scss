@@ -9,8 +9,9 @@
     align-items: center;
     justify-content: center;
     flex-flow: column;
-    gap: 15px;
+    gap: 10px;
     font-weight: 800;
+    font-size: 1.5rem;
     > div > a {
         transition: 200ms;
         display: flex;

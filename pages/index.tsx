@@ -1,35 +1,31 @@
-import React, { useState } from 'react';
-import Head from 'next/head';
+import Link from 'next/link';
+import React from 'react';
 import styles from '@/styles/Index.module.scss';
 import { Footer } from '@/components/Footer';
 import type { NextPage } from 'next';
+import { Animation } from '@/components/Animation';
+import Person from '@/public/Person.json';
+import { PageHead } from '@/components/Head';
 
 const Index: NextPage = function Index() {
-  const [colour, setColour] = useState<string | null>(null);
-
-  const changeColour = () => {
-    const newColour = `#${Math.random().toString(16).substr(-6)}`;
-    setColour(newColour);
-  };
-
   return (
     <div className={styles.index}>
-      <Head>
-        <title>Syed Aabis Akhtar</title>
-        <meta name="description" content="Cool favicon right?" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <PageHead />
+      <div className={styles.gradiant} />
       <main className={styles.main}>
-        <div className={styles.gradiant} />
-        <h1
-          className="text-white"
-          style={colour ? { color: colour, textShadow: `1px 1px 20px ${colour}70` } : {}}
-        >
-          Nothing here yet...
-
-        </h1>
-        <h2 className="text-white">How about you click the button below till then for absolutely no reason?</h2>
-        <button onClick={changeColour}>A totally random button</button>
+        <h1 className="text-white text-8xl font-bold">Heya! I’m Aabis, also known as 0xBolt online.</h1>
+        <p className="text-blue-1 text-4xl w-4/6 mt-5">I’ve spent most of my time being a fullstack web developer and doing scripting, bot dev and some ML. Now I work on Web3 projects related to Solana blockchain.</p>
+        <div className={styles.buttons}>
+          <Link href="/projects">
+            <a className={styles.projects}>Projects</a>
+          </Link>
+          <Link href="/blog">
+            <a className={styles.blog}>Blog</a>
+          </Link>
+        </div>
+        <div className={styles.animation}>
+          <Animation json={Person} height={450} width={650} />
+        </div>
       </main>
       <Footer />
     </div>
