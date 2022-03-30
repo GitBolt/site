@@ -26,8 +26,9 @@ const Index: NextPage = function Index() {
         <div className={styles.animation}>
           <Animation json={Person} height="40rem" width="55rem" />
         </div>
+        <Footer />
       </main>
-      <Footer />
+
     </div>
   );
 };

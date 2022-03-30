@@ -12,7 +12,6 @@ export const Footer = function Footer() {
     <footer className={styles.footer}>
       <span>SYED AABIS AKHTAR | 2022 &#169;</span>
       <div className="flex gap-3">
-
         <Link href="https://twitter.com/0xBolt" passHref>
           <a target="_blank" rel="noopener noreferrer">
             <Image src={Twitter} height="30px" width="40px" />
