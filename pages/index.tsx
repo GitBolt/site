@@ -24,7 +24,7 @@ const Index: NextPage = function Index() {
           </Link>
         </div>
         <div className={styles.animation}>
-          <Animation json={Person} height={450} width={650} />
+          <Animation json={Person} height="40rem" width="55rem" />
         </div>
       </main>
       <Footer />

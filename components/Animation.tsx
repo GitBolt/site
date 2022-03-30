@@ -3,8 +3,8 @@ import Lottie from 'react-lottie';
 
 type Props = {
   json: any,
-  height: number,
-  width: number
+  height: number | string,
+  width: number | string,
 };
 
 export const Animation = function Animation({ json, height, width }: Props) {
