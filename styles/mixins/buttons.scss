@@ -1,5 +1,5 @@
 @mixin primary_button($height, $width) {
-    background: linear-gradient(270deg, #173EA5 26.5%, #4567BE 100%);
+    background: linear-gradient(260deg, #173EA5 26.5%, #4567BE 100%);
     color: white;
     padding: $height $width;
     width: calc($width * 2.5);
