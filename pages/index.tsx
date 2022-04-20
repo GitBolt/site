@@ -19,9 +19,6 @@ const Index: NextPage = function Index() {
           <Link href="/projects">
             <a className={styles.projects}>Projects</a>
           </Link>
-          <Link href="/blog">
-            <a className={styles.blog}>Blog</a>
-          </Link>
         </div>
         <div className={styles.animation}>
           <Animation json={Person} height="40rem" width="55rem" />
