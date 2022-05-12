@@ -20,10 +20,10 @@ const Index: NextPage = function Index() {
         </h1>
         <p className="text-blue-1 text-[2.4rem] w-4/6 mt-5">I&apos;ve spent most of my time being a fullstack web developer and doing scripting, bot dev and some ML. Now I work on Web3 projects on Solana blockchain.</p>
         <div className={styles.buttons}>
-          <Link href="/projects">
-            <a className={styles.projects}>Stuff that I built</a>
+          <Link href="https://github.com/GitBolt?tab=repositories">
+            <a target="_blank" rel="noopener noreferrer" className={styles.projects}>Stuff that I built</a>
           </Link>
-          <Link href="/projects">
+          <Link href="/skills">
             <a className={styles.skills}>Stuff that I know</a>
           </Link>
         </div>
