@@ -3,21 +3,28 @@ import React from 'react';
 import styles from '@/styles/Index.module.scss';
 import { Footer } from '@/components/Footer';
 import type { NextPage } from 'next';
+import { PageHead } from '@/components/Head';
 import { Animation } from '@/components/Animation';
 import Person from '@/public/Person.json';
-import { PageHead } from '@/components/Head';
 
 const Index: NextPage = function Index() {
   return (
     <div className={styles.index}>
       <PageHead />
-      <div className={styles.gradiant} />
+      <div className={styles.gradient} />
       <main className={styles.main}>
-        <h1 className="text-white text-8xl font-bold">Heya! I’m Aabis, also known as 0xBolt online.</h1>
-        <p className="text-blue-1 text-4xl w-4/6 mt-5">I’ve spent most of my time being a fullstack web developer and doing scripting, bot dev and some ML. Now I work on Web3 projects related to Solana blockchain.</p>
+        <h1 className="text-white text-[4.5rem] font-[600]">
+          Heya!
+          <br />
+          I&apos;m Aabis, also known as 0xBolt online.
+        </h1>
+        <p className="text-blue-1 text-[2.4rem] w-4/6 mt-5">I&apos;ve spent most of my time being a fullstack web developer and doing scripting, bot dev and some ML. Now I work on Web3 projects on Solana blockchain.</p>
         <div className={styles.buttons}>
           <Link href="/projects">
-            <a className={styles.projects}>Projects</a>
+            <a className={styles.projects}>Stuff that I built</a>
+          </Link>
+          <Link href="/projects">
+            <a className={styles.skills}>Stuff that I know</a>
           </Link>
         </div>
         <div className={styles.animation}>
