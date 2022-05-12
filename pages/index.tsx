@@ -4,8 +4,8 @@ import styles from '@/styles/Index.module.scss';
 import { Footer } from '@/components/Footer';
 import type { NextPage } from 'next';
 import { PageHead } from '@/components/Head';
-import { Animation } from '@/components/Animation';
-import Person from '@/public/Person.json';
+import Image from 'next/image';
+import Line from '@/svgs/line.svg';
 
 const Index: NextPage = function Index() {
   return (
@@ -27,8 +27,10 @@ const Index: NextPage = function Index() {
             <a className={styles.skills}>Stuff that I know</a>
           </Link>
         </div>
-        <div className={styles.animation}>
-          <Animation json={Person} height="40rem" width="55rem" />
+        <div
+          className="absolute right-0"
+        >
+          <Image src={Line} />
         </div>
         <Footer />
       </main>

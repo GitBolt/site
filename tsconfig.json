@@ -38,6 +38,9 @@
         ],
         "@/public/*": [
           "public/*"
+        ],
+        "@/svgs/*": [
+          "svgs/*"
         ]
       },
       "incremental": true
