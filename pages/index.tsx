@@ -14,17 +14,19 @@ const Index: NextPage = function Index() {
       <div className={styles.gradient} />
       <main className={styles.main}>
         <h1 className="text-white text-[4.5rem] font-[600]">
-          Heya!
+          Hey,
           <br />
           I&apos;m Aabis, also known as 0xBolt online.
+          <br /> 
+          I&apos;m and love to build things!
         </h1>
         <p className="text-blue-1 text-[2.4rem] w-4/6 mt-5">I&apos;ve spent most of my time being a fullstack web developer and doing scripting, bot dev and some ML. Now I work on Web3 projects on Solana blockchain.</p>
         <div className={styles.buttons}>
           <Link href="https://github.com/GitBolt?tab=repositories">
             <a target="_blank" rel="noopener noreferrer" className={styles.projects}>Projects</a>
           </Link>
-          <Link href="/skills">
-            <a className={styles.skills}>Skills</a>
+          <Link href="mailto://hi@aabis.xyz">
+            <a className={styles.skills}>Contact</a>
           </Link>
         </div>
         <div
