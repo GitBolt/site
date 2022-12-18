@@ -25,7 +25,7 @@ const Index: NextPage = function Index() {
           <Link href="https://github.com/GitBolt?tab=repositories">
             <a target="_blank" rel="noopener noreferrer" className={styles.projects}>Projects</a>
           </Link>
-          <Link href="mailto://hi@aabis.xyz">
+          <Link href="mailto://heyaabis@gmail.com">
             <a className={styles.skills}>Contact</a>
           </Link>
         </div>
