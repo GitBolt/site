@@ -18,7 +18,7 @@ const Index: NextPage = function Index() {
           <br />
           I&apos;m Aabis, also known as 0xBolt online.
           <br />
-          I&apos;m and love to build things!
+          I&apos;m 16 and love to build things!
         </h1>
         <p className="text-blue-1 text-[2.4rem] w-4/6 mt-5">I&apos;ve spent most of my time being a fullstack web developer and doing scripting, bot dev and some ML. Now I work on Web3 projects on Solana blockchain.</p>
         <div className={styles.buttons}>
