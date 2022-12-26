@@ -1,6 +1,5 @@
+/* eslint-disable max-len */
 import React from 'react';
-import styles from '@/styles/Index.module.scss';
-import { Footer } from '@/components/Footer';
 import type { NextPage } from 'next';
 import { PageHead } from '@/components/Head';
 
@@ -42,13 +41,11 @@ const Index: NextPage = function Index() {
   return (
     <>
       <PageHead title="StellarSOL Privacy Policy" />
-      <head>
-        <style>
-          {css}
-        </style>
-      </head>
+      <style>
+        {css}
+      </style>
       <body style={{ lineHeight: '1.5' }}>
-        <div style={{ maxWidth: '80vw', margin: '0 auto', padding: "10rem" }}>
+        <div style={{ maxWidth: '80vw', margin: '0 auto', padding: '10rem' }}>
           <h1>Privacy Policy</h1>
           <p>
             At StellarSOL, we are committed to protecting your privacy. This privacy policy explains how we collect, use, and share information about you when you use our browser extension and related services.
