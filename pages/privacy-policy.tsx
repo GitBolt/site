@@ -60,16 +60,19 @@ const Index: NextPage = function Index() {
           </p>
           <h2>Information We Collect</h2>
           <p>
-            StellarSOL only collects the following information about you:
+            StellarSOL collects the following personal information about you:
           </p>
           <ul>
             <li>
               Email address: We collect your email address in order to authorize your use of our extension and to store your purchase history within the extension.
             </li>
+            <li>
+              IP address: We collect your IP address in order to protect against fraudulent activity and to improve the security of our extension and website.
+            </li>
+            <li>
+              Cookies: We may use cookies to track your browsing activity and to improve your user experience on our extension and website.
+            </li>
           </ul>
-          <p>
-            We do not collect any other personal information about you, including IP addresses or cookies.
-          </p>
           <h2>How We Use Your Information</h2>
           <p>
             We use the information we collect about you as follows:
@@ -80,12 +83,18 @@ const Index: NextPage = function Index() {
               <ul>
                 <li>Authorize your use of StellarSOL</li>
                 <li>Store your purchase history within the extension for your personal reference</li>
-                <li>Communicate with you about your use of our extension and website</li>
+                <li>Communicate with you about your use of our extension and website, including updates and changes to our terms and policies</li>
               </ul>
+            </li>
+            <li>
+              IP address: We use your IP address to protect against fraudulent activity and to improve the security of our extension and website.
+            </li>
+            <li>
+              Cookies: We use cookies to track your browsing activity and to improve your user experience on our extension and website.
             </li>
           </ul>
           <p>
-            We do not share your email address with any third parties, except as necessary to provide our extension and website to you. Your purchase history is stored within the extension for your personal reference and is not shared with any third parties.
+            We do not share your personal information with any third parties, except as necessary to provide our extension and website to you. Your purchase history is stored within the extension for your personal reference and is not shared with any third parties.
           </p>
           <p>
             StellarSOL allows you to make payments using cryptocurrency on e-commerce sites such as Amazon and Flipkart. To facilitate these payments, we may use third party vendors such as Bitrefill.com and Bidali.com to buy gift cards on behalf of our users using the cryptocurrency provided by the user. These vendors do not receive any personal information about our users. We then use automation to apply those gift cards to purchases made through our extension on behalf of the user.
@@ -96,31 +105,35 @@ const Index: NextPage = function Index() {
           </p>
           <h2>Data Security</h2>
           <p>
-            We take reasonable measures to protect the information we collect about you from unauthorized access or tampering. These measures include implementing appropriate technical and organizational safeguards and regularly monitoring our systems for potential vulnerabilities and attacks. However, no data transmission over the internet or storage system can be guaranteed to be completely secure, so we cannot guarantee the absolute security of your information.
+            We take reasonable measures to protect the information we collect about you from unauthorized access or tampering. These measures include implementing appropriate technical and organizational safeguards and regularly monitoring our systems for potential vulnerabilities and attacks. However, no
+            data transmission over the internet or storage system can be guaranteed to be completely secure, so we cannot guarantee the absolute security of your information.
           </p>
-
           <h2>Data Retention</h2>
           <p>
-            We will store your information for as long as you use our extension and website. If you wish to have your information deleted, please contact us at stellarsolapp@gmail.com and we will process your request as soon as possible.
+            We will retain your personal information for as long as you use our extension and website. After you cease using our extension and website, we will retain your personal information for a reasonable period of time in order to comply with legal obligations and to resolve any disputes that may arise.
           </p>
-
+          <h2>Your Rights</h2>
+          <p>
+            You have the right to access, update, and delete your personal information at any time. You can exercise these rights by contacting us at stellarsolapp@gmail.com. We will respond to your request within 48 hours.
+          </p>
+          <p>
+            You also have the right to object to the processing of your personal information, and to withdraw your consent at any time. Please note that withdrawing your consent may affect our ability to provide our extension and website to you.
+          </p>
           <h2>Changes to This Privacy Policy</h2>
           <p>
-            We may update this privacy policy from time to time to reflect changes in our practices or to comply with legal requirements. We will post any updates to this policy on this page and encourage you to review this policy periodically for the latest information on our privacy practices.
+            We may update this privacy policy from time to time to reflect changes in our practices or to comply with legal requirements. We will post any updates to this policy on this page and notify you via email or through a prominent notice on our website. We encourage you to review this policy periodically for the latest information on our privacy practices.
           </p>
           <h2>Contact Us</h2>
           <p>
             If you have any questions or concerns about this privacy policy or the privacy practices of StellarSOL, please contact us at stellarsolapp@gmail.com. We are committed to working with you to resolve any issues you may have.
           </p>
-
           <p style={{
-            textAlign: 'center', fontWeight: '700', marginTop: '4rem', fontSize: '3rem',
+            textAlign: 'center', fontWeight: 'bold', marginTop: '3rem',
           }}
           >
-            Last Updated on 12 December, 2022
+            Last updated: 12 December, 2022
           </p>
         </div>
-
       </body>
     </>
   );
