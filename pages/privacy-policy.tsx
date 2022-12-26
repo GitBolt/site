@@ -48,7 +48,7 @@ p, ul {
 const Index: NextPage = function Index() {
   return (
     <>
-      <PageHead title="StellarSOL Privacy Policy" />
+      <PageHead title="StellarSOL Privacy Policy" description="Privacy policy for StellarSOL browser extension" />
       <style>
         {css}
       </style>
