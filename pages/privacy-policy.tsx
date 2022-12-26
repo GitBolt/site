@@ -66,13 +66,8 @@ const Index: NextPage = function Index() {
             <li>
               Email address: We collect your email address in order to authorize your use of our extension and to store your purchase history within the extension.
             </li>
-            <li>
-              IP address: We collect your IP address in order to protect against fraudulent activity and to improve the security of our extension and website.
-            </li>
-            <li>
-              Cookies: We may use cookies to track your browsing activity and to improve your user experience on our extension and website.
-            </li>
           </ul>
+          <p>We do not collect any other information including IP Address and Cookies.</p>
           <h2>How We Use Your Information</h2>
           <p>
             We use the information we collect about you as follows:
@@ -85,12 +80,6 @@ const Index: NextPage = function Index() {
                 <li>Store your purchase history within the extension for your personal reference</li>
                 <li>Communicate with you about your use of our extension and website, including updates and changes to our terms and policies</li>
               </ul>
-            </li>
-            <li>
-              IP address: We use your IP address to protect against fraudulent activity and to improve the security of our extension and website.
-            </li>
-            <li>
-              Cookies: We use cookies to track your browsing activity and to improve your user experience on our extension and website.
             </li>
           </ul>
           <p>
