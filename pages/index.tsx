@@ -14,6 +14,7 @@ const Index: NextPage = function Index() {
 
         <h1>
           Hey, I&apos;m
+          {' '}
           <b>Aabis</b>
         </h1>
         <p>I&apos;m a fullstack developer, mostly working on Solana blockchain and Web3.</p>
@@ -35,11 +36,15 @@ const Index: NextPage = function Index() {
 
       <p className={styles.intro}>
         My
+        {' '}
         <a href="https://twitter.com/0xBolt">DMs</a>
+        {' '}
         are always open, feel free to reach out or drop an
+        {' '}
         <a href="mailto://heyaabis@gmail.com">Email.</a>
         <br />
         Check my work on
+        {' '}
         <a href="https://github.com/GitBolt">GitHub.</a>
       </p>
 
