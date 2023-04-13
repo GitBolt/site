@@ -5,7 +5,6 @@ import styles from '@/styles/Footer.module.scss';
 import Twitter from '@/public/icons/twitter.svg';
 import Discord from '@/public/icons/discord.svg';
 import GitHub from '@/public/icons/github.svg';
-import Devto from '@/public/icons/devto.svg';
 
 export const Footer = function Footer() {
   return (
