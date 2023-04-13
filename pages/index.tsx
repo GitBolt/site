@@ -11,32 +11,32 @@ const Index: NextPage = function Index() {
   return (
     <div className={styles.index}>
       <PageHead />
-      <div className={styles.gradient} />
-      <main className={styles.main}>
-        <h1 className="text-white text-[4.5rem] font-[600]">
-          Hey,
-          <br />
-          I&apos;m Aabis, also known as 0xBolt online.
-          <br />
-          I&apos;m 16 and love to build things!
-        </h1>
-        <p className="text-blue-1 text-[2.4rem] w-4/6 mt-5">I&apos;ve spent most of my time being a fullstack web developer and doing scripting, bot dev and some ML. Now I work on Web3 projects on Solana blockchain.</p>
-        <div className={styles.buttons}>
-          <Link href="https://github.com/GitBolt?tab=repositories">
-            <a target="_blank" rel="noopener noreferrer" className={styles.projects}>Projects</a>
-          </Link>
-          <Link href="mailto://heyaabis@gmail.com">
-            <a className={styles.skills}>Contact</a>
-          </Link>
-        </div>
-        <div
-          className="absolute right-0"
-        >
-          <Image src={Line} />
-        </div>
-        <Footer />
-      </main>
+      <div className={styles.moon} />
+      <div className={styles.mainBox}>
 
+        <h1>Hey, I'm <b>Aabis</b></h1>
+        <p>I'm a fullstack developer, mostly working on Solana blockchain and Web3.</p>
+
+      </div>
+
+      <div className={styles.identity}>
+        <div>
+          <img src="/bolt.png" />
+          <p>I'm mostly known as Bolt online.</p>
+        </div>
+
+        <div>
+          <img src="/me.png" />
+          <p>But I don't keep my identity hidden.</p>
+        </div>
+
+      </div>
+
+
+      <p className={styles.intro}>My <a href="https://twitter.com/0xBolt">DMs</a> are always open, feel free to reach out or drop an <a href="mailto://heyaabis@gmail.com">Email</a>.  
+        <br/>Check my work on <a href="https://github.com/GitBolt" >GitHub.</a> </p>
+
+      <Footer />
     </div>
   );
 };

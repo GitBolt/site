@@ -30,11 +30,6 @@ export const Footer = function Footer() {
           </a>
         </Link>
 
-        <Link href="https://dev.to/0xbolt/" passHref>
-          <a target="_blank" rel="noopener noreferrer">
-            <Image src={Devto} height="30px" width="40px" />
-          </a>
-        </Link>
       </div>
 
     </footer>
