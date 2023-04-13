@@ -2,8 +2,8 @@
 
 .index {
   background-color: #13151C;
-  height: 100vh;
   display: grid;
+  min-height: 100vh;
   width: 100vw;
 }
 
@@ -82,6 +82,7 @@
   width: 90vw;
   justify-self: center;
   font-size: 30px;
+  margin-bottom: 80px;
   color: #8991AE;
   transform: translate(0, 50px);
   > a {
@@ -91,6 +92,31 @@
 }
 
 
-@media only screen and (max-width: 1050px){
+@media only screen and (max-width: 650px){
+  .mainBox {
+    padding: 50px 0;
+    > h1 {
+      font-size: 50px
+    };
+    > p {
+      font-size: 25px
+    };
+  }
 
+  .identity {
+    > div {
+      > p {
+        font-size: 25px;
+      }
+
+      > img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+
+  .intro {
+    font-size: 25px;
+  }
 }
