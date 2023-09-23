@@ -116,7 +116,6 @@ const Index: NextPage = function Index() {
           <p>
             If you have any questions or concerns about this privacy policy or the privacy practices of StellarSOL, please contact us at stellarsolapp@gmail.com. We are committed to working with you to resolve any issues you may have.
           </p>
-          https://drive.google.com/drive/folders/1-C5jDKBxlxp9SSv6SQiXy9m4RmGwsZop?usp=sharing
           <p style={{
             textAlign: 'center', fontWeight: 'bold', marginTop: '3rem',
           }}
