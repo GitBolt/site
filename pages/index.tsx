@@ -41,7 +41,7 @@ const Index: NextPage = function Index() {
         {' '}
         are always open, feel free to reach out or drop an
         {' '}
-        <a href="mailto:heyaabis@gmail.com" target="_blank" rel="noreferrer">Email</a>
+        <a href="mailto:heyaabis@gmail.com" target="_blank" rel="noreferrer">Email.</a>
         <br />
         Check my work on
         {' '}
