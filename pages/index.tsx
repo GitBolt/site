@@ -17,7 +17,7 @@ const Index: NextPage = function Index() {
           {' '}
           <b>Aabis</b>
         </h1>
-        <p>I&apos;m a fullstack developer, mostly working on Solana blockchain and Web3.</p>
+        <p>I&apos;m a fullstack developer, mostly working on Solana blockchain.</p>
 
       </div>
 
@@ -43,7 +43,7 @@ const Index: NextPage = function Index() {
         {' '}
         <a href="mailto:heyaabis@gmail.com" target="_blank" rel="noreferrer">Email.</a>
         <br />
-        Check my work on
+        Some things I've done:
         {' '}
         <a href="https://github.com/GitBolt" target="_blank" rel="noreferrer">GitHub</a>
       </p>

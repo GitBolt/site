@@ -42,3 +42,9 @@ a {
 a, button, img, div {
   -webkit-tap-highlight-color: transparent;
 }
+
+@media screen and (min-width: 1600px){
+  html, body {
+    font-size: 60%;
+  }
+}

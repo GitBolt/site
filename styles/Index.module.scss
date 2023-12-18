@@ -8,7 +8,7 @@
 }
 
 .mainBox {
-  width: 90vw;
+  width: 60vw;
   justify-self: center;
   margin-top: 80px;
   height: fit-content;
@@ -47,19 +47,19 @@
   border-radius: 50%;
   z-index: 1;
   box-shadow: 0px 0px 120px 40px #d8eaff;
-  transform: translate(50px, 50px)
+  transform: translate(350px, 50px)
 }
 
 .identity {
   display: flex;
   flex-flow: column;
-  width: 90vw;
+  width: 60vw;
   justify-content: center;
   justify-self: center;
   gap: 15px;
   margin-top: 20px;
   > div {
-    width: 80vw;
+    width: 60vw;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -79,7 +79,7 @@
 }
 
 .intro {
-  width: 90vw;
+  width: 60vw;
   justify-self: center;
   font-size: 30px;
   margin-bottom: 80px;
