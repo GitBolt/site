@@ -12,9 +12,8 @@
   justify-self: center;
   margin-top: 80px;
   height: fit-content;
-  padding: 70px 0;
+  padding: 50px 0;
   border-radius: 30px;
-  box-shadow: -5px -5px 10px #4a4f673d, 5px 5px 10px #00000012;
   display: flex;
   align-items: start;
   justify-content: center;
@@ -22,32 +21,18 @@
   background:  linear-gradient(91.53deg, #373f5533 0%, #15171e33 86.33%);
   backdrop-filter: blur(5px);
   z-index: 2;
-  gap: 20px;
-  
+  gap: 10px;
   > h1 {
     margin-left: 5%;
     color: white;
-    font-size: 60px;
+    font-size: 50px;
   }
   > p {
     margin-left: 5%;
     color: #71788B;
-    font-size: 35px;
+    font-size: 30px;
   }
 
-}
-
-.moon {
-  width: 90px;
-  height: 90px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #ffffff;
-  border-radius: 50%;
-  z-index: 1;
-  box-shadow: 0px 0px 120px 40px #d8eaff;
-  transform: translate(350px, 50px)
 }
 
 .identity {
@@ -57,7 +42,6 @@
   justify-content: center;
   justify-self: center;
   gap: 15px;
-  margin-top: 20px;
   > div {
     width: 60vw;
     display: flex;
@@ -81,7 +65,7 @@
 .intro {
   width: 60vw;
   justify-self: center;
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 80px;
   color: #8991AE;
   transform: translate(0, 50px);
@@ -92,15 +76,15 @@
 }
 
 
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 1100px){
   .mainBox {
-    padding: 50px 0;
+    width: 65vw;
     margin-top: 40px;
     > h1 {
-      font-size: 50px
+      font-size: 45px
     };
     > p {
-      font-size: 25px
+      font-size: 30px
     };
   }
 
@@ -116,12 +100,51 @@
       }
     }
   }
-
   .intro {
-    font-size: 25px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .mainBox {
+    width: 80vw;
+    padding: 40px 0;
+    margin-top: 40px;
+    > h1 {
+      font-size: 40px
+    };
+    > p {
+      font-size: 25px
+    };
   }
 
-  .moon {
-    transform: translate(0, 0);
+  .identity {
+    width: 80vw;
+    > div {
+      > p {
+        font-size: 20px;
+      }
+
+      > img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+  .intro {
+    width: 80vw;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .mainBox {
+    margin-top: 40px;
+    > h1 {
+      font-size: 35px
+    };
+    > p {
+      font-size: 20px
+    };
   }
 }

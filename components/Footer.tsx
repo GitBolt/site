@@ -10,7 +10,7 @@ import LinkedIn from '@/public/icons/linkedin.svg';
 export const Footer = function Footer() {
   return (
     <footer className={styles.footer}>
-      <span>SYED AABIS AKHTAR | 2023 &#169;</span>
+      <span>SYED AABIS AKHTAR | 2024 &#169;</span>
       <div className="flex gap-3">
         <Link href="https://twitter.com/0xBolt" passHref>
           <a target="_blank" rel="noopener noreferrer">

@@ -9,7 +9,7 @@ const Index: NextPage = function Index() {
   return (
     <div className={styles.index}>
       <PageHead />
-      <div className={styles.moon} />
+      {/* <div className={styles.moon} /> */}
       <div className={styles.mainBox}>
 
         <h1>
@@ -35,17 +35,17 @@ const Index: NextPage = function Index() {
       </div>
 
       <p className={styles.intro}>
-        My
+        My DMs on
         {' '}
-        <a href="https://twitter.com/0xBolt" target="_blank" rel="noreferrer">DMs on Twitter</a>
+        <a href="https://twitter.com/0xBolt" target="_blank" rel="noreferrer">X (Twitter)</a>
         {' '}
         are always open, feel free to reach out or drop an
         {' '}
-        <a href="mailto:heyaabis@gmail.com" target="_blank" rel="noreferrer">Email.</a>
+        <a href="mailto:heyaabis@gmail.com" target="_blank" rel="noreferrer">email.</a>
         <br />
-        Some things I've done:
+        All of my projects are open sourced on
         {' '}
-        <a href="https://github.com/GitBolt" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://github.com/GitBolt" target="_blank" rel="noreferrer">GitHub.</a>
       </p>
 
       <Footer />
