@@ -18,11 +18,11 @@
   gap: 10px;
   > h1 {
     color: white;
-    font-size: 50px;
+    font-size: 45px;
   }
   > p {
     color: #71788B;
-    font-size: 25px;
+    font-size: 22px;
   }
 
 }
@@ -42,15 +42,15 @@
     gap: 10px;
     > p {
       color: #8991AE;
-      font-size: 25px;
+      font-size: 22px;
     }
 
     > img {
       border: 1px solid #353b52;
       object-fit: cover;
       border-radius: 50%;
-      width: 70px;
-      height: 70px;
+      width: 60px;
+      height: 60px;
     }
   }
 }
@@ -58,7 +58,7 @@
 .intro {
   width: 60vw;
   justify-self: center;
-  font-size: 25px;
+  font-size: 20px;
   margin-bottom: 80px;
   color: #8991AE;
   transform: translate(0, 50px);
@@ -70,10 +70,10 @@
     margin-top: 35px;
     width: 70vw;
     > h1 {
-      font-size: 45px
+      font-size: 40px
     };
     > p {
-      font-size: 22px
+      font-size: 20px
     };
   }
 
@@ -92,7 +92,7 @@
   }
   .intro {
     width: 70vw;
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -100,11 +100,12 @@
   .mainBox {
     width: 80vw;
     margin-top: 30px;
+    padding: 40px 30px;
     > h1 {
       font-size: 32px
     };
     > p {
-      font-size: 20px
+      font-size: 18px
     };
   }
 
@@ -112,7 +113,7 @@
     width: 80vw;
     > div {
       > p {
-        font-size: 20px;
+        font-size: 18px;
       }
 
       > img {
@@ -123,7 +124,7 @@
   }
   .intro {
     width: 80vw;
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -135,7 +136,7 @@
       font-size: 30px
     };
     > p {
-      font-size: 18px
+      font-size: 16px
     };
   }
 
@@ -144,7 +145,7 @@
     width: 90vw;
     > div {
       > p {
-        font-size: 18px;
+        font-size: 16px;
       }
 
       > img {
@@ -156,6 +157,6 @@
   .intro {
     margin-top: 0;
     width: 90vw;
-    font-size: 16px;
+    font-size: 14px;
   }
 }

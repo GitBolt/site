@@ -22,6 +22,7 @@ const Index: NextPage = function Index() {
         <p>
           I love aerospace, robotics and building things.
           I was featured in the documentary
+          {' '}
           <a href="https://www.youtube.com/watch?v=dxqHtNglAJo" target="_blank" rel="noreferrer">Superteens</a>
           , won Apple&apos;s
           {' '}
