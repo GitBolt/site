@@ -14,7 +14,7 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   font-size: 62.5%;
-  overflow-x: hidden;
+  background-color: #13151C;
   position: relative;
 }
 
@@ -27,6 +27,14 @@ a {
   box-sizing: border-box;
 }
 
-a, button, img, div {
+a,
+button,
+img,
+div {
   -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: underline;
+  color: #BFC9EC;
 }

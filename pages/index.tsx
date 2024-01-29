@@ -17,7 +17,14 @@ const Index: NextPage = function Index() {
           {' '}
           <b>Aabis</b>
         </h1>
-        <p>I&apos;m a fullstack developer, mostly working on Solana blockchain.</p>
+        <p>I&apos;m a 17 year old fullstack developer, mostly working on Solana blockchain.</p>
+        <br />
+        <p>I love aerospace, robotics and building things. 
+          I was featured in the documentary <a href="https://www.youtube.com/watch?v=dxqHtNglAJo" target="_blank">Superteens</a>
+          , won Apple's <a href="https://twitter.com/0xBolt/status/1656023458680119327" target="_blank">Swift Student Challenge</a> in 4 days without having a Mac and
+           won <a href="https://twitter.com/0xBolt/status/1621828714152730624" target="_blank">Sandstorm</a> hackathon by building a project in 3 hours before deadline.
+        
+        </p>
 
       </div>
 

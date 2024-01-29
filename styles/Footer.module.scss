@@ -1,6 +1,6 @@
 .footer {
     border-top: 1px solid #1d1d24;
-    padding-top: 30px;
+    padding: 50px 0;
     width: 100%;
     height: 10vh;
     display: flex;
@@ -8,9 +8,9 @@
     justify-content: center;
     flex-flow: column;
     gap: 20px;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 1.5rem;
-    color: #71788B;
+    color: #40495e;
     > div > a {
         transition: 200ms;
         display: flex;
