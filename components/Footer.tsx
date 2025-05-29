@@ -18,12 +18,6 @@ export const Footer = function Footer() {
           </a>
         </Link>
 
-        <Link href="https://discord.com/users/791950104680071188" passHref>
-          <a target="_blank" rel="noopener noreferrer">
-            <Image src={Discord} height="30px" width="40px" />
-          </a>
-        </Link>
-
         <Link href="https://github.com/GitBolt" passHref>
           <a target="_blank" rel="noopener noreferrer">
             <Image src={GitHub} height="30px" width="40px" />
