@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from '@/styles/Footer.module.scss';
 import Twitter from '@/public/icons/twitter.svg';
-import Discord from '@/public/icons/discord.svg';
 import GitHub from '@/public/icons/github.svg';
 import LinkedIn from '@/public/icons/linkedin.svg';
 
