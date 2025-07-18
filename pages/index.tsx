@@ -29,9 +29,9 @@ const Index: NextPage = function Index() {
           in 4 days without having a Mac, and
           won
           {' '}
-          <a href="https://twitter.com/0xBolt/status/1621828714152730624" target="_blank" rel="noreferrer">Sandstorm</a>
+          <a href="https://www.sandstormhackathon.com" target="_blank" rel="noreferrer">Sandstorm</a>
           {' '}
-          hackathon by building a project in 3 hours before deadline.
+          hackathon by building a project in 3 hours before deadline
         </p>
 
       </div>

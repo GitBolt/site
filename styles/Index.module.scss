@@ -1,5 +1,5 @@
 .index {
-  background-color: #13151C;
+  background-color: #101116;
   display: grid;
   min-height: 100vh;
   width: 100vw;
@@ -14,15 +14,16 @@
   border-radius: 20px;
   display: flex;
   flex-flow: column;
-  background:  linear-gradient(91.53deg, #373f5533 0%, #15171e33 86.33%);
+  line-height: 1.8;
+  background:  linear-gradient(91.53deg, #30374a33 0%, #0f101533 86.33%);
   gap: 10px;
   > h1 {
     color: white;
-    font-size: 45px;
+    font-size: 40px;
   }
   > p {
     color: #71788B;
-    font-size: 22px;
+    font-size: 20px;
   }
 
 }
@@ -34,7 +35,7 @@
   width: 60vw;
   justify-content: center;
   justify-self: center;
-  gap: 15px;
+  gap: 25px;
   > div {
     width: 60vw;
     display: flex;
@@ -42,7 +43,7 @@
     gap: 10px;
     > p {
       color: #8991AE;
-      font-size: 22px;
+      font-size: 20px;
     }
 
     > img {
@@ -58,7 +59,7 @@
 .intro {
   width: 60vw;
   justify-self: center;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 80px;
   color: #8991AE;
   transform: translate(0, 50px);
