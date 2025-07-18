@@ -13,14 +13,14 @@ const Index: NextPage = function Index() {
       <div className={styles.mainBox}>
 
         <h1>
-          Hey, I&apos;m
+          Hi, I&apos;m
           {' '}
           <b>Aabis</b>
         </h1>
-        <p>I&apos;m an 18 year old fullstack developer, mostly working on Solana blockchain.</p>
-        <br />
+{/*         <p>I&apos;m an 18 year old fullstack developer, mostly working on Solana blockchain.</p>
+        <br /> */}
         <p>
-          I love aerospace, robotics and building things.
+          I love aerospace, finance, and building things.
           I was featured in the documentary
           {' '}
           <a href="https://www.youtube.com/watch?v=dxqHtNglAJo" target="_blank" rel="noreferrer">Superteens</a>
@@ -28,13 +28,12 @@ const Index: NextPage = function Index() {
           {' '}
           <a href="https://twitter.com/0xBolt/status/1656023458680119327" target="_blank" rel="noreferrer">Swift Student Challenge</a>
           {' '}
-          in 4 days without having a Mac and
+          in 4 days without having a Mac, and
           won
           {' '}
           <a href="https://twitter.com/0xBolt/status/1621828714152730624" target="_blank" rel="noreferrer">Sandstorm</a>
           {' '}
           hackathon by building a project in 3 hours before deadline.
-
         </p>
 
       </div>
@@ -47,7 +46,7 @@ const Index: NextPage = function Index() {
 
         <div>
           <img src="/me.png" />
-          <p>But I don&apos;t keep my identity hidden.</p>
+          <p>But I&apos;m not an anon</p>
         </div>
 
       </div>
@@ -61,7 +60,7 @@ const Index: NextPage = function Index() {
         {' '}
         <a href="mailto:heyaabis@gmail.com" target="_blank" rel="noreferrer">email.</a>
         <br />
-        All of my projects are open sourced on
+        Most of my projects are open sourced on
         {' '}
         <a href="https://github.com/GitBolt" target="_blank" rel="noreferrer">GitHub.</a>
       </p>
