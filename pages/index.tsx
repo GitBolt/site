@@ -17,8 +17,6 @@ const Index: NextPage = function Index() {
           {' '}
           <b>Aabis</b>
         </h1>
-{/*         <p>I&apos;m an 18 year old fullstack developer, mostly working on Solana blockchain.</p>
-        <br /> */}
         <p>
           I love aerospace, finance, and building things.
           I was featured in the documentary
