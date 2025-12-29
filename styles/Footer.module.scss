@@ -1,26 +1,74 @@
 .footer {
-    border-top: 1px solid #1d1d24;
-    padding: 50px 0;
     width: 100%;
-    height: 10vh;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.glassBar {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-flow: column;
-    gap: 10px;
-    font-weight: 700;
-    font-size: 18px;
-    color: #40495e;
-    > div > a {
-        transition: 200ms;
+    gap: 20px;
+    padding: 14px 28px;
+    background: rgba(25, 25, 30, 0.85);
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #9aa5b8;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: -1px;
+        border-radius: 50px;
+        padding: 1px;
+        background: conic-gradient(from var(--angle, 0deg),
+                transparent 0%,
+                rgba(113, 118, 133, 0.3) 10%,
+                transparent 20%,
+                transparent 100%);
+        -webkit-mask: linear-gradient(#2b2929 0 0) content-box, linear-gradient(#272525 0 0);
+        mask: linear-gradient(#292828 0 0) content-box, linear-gradient(#2b2929 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        animation: rotate 3s linear infinite;
+    }
+
+    >span {
+        line-height: 1;
+    }
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes rotate {
+    to {
+        --angle: 360deg;
+    }
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    >a {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 5px 0px;
-        border-radius: 50%;
-        &:hover {
-            background-color: #23273d;
+        padding: 4px;
+        opacity: 0.7;
+        transition: opacity 0.2s;
+        line-height: 0;
 
+        &:hover {
+            opacity: 1;
         }
     }
 }
