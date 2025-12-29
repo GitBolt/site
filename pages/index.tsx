@@ -7,21 +7,81 @@ import type { NextPage } from 'next';
 import { PageHead } from '@/components/Head';
 
 const experience = [
-  { logo: '/logos/spicenet.jpg', title: 'protocol engineer', company: 'spicenet', link: 'https://spicenet.io' },
-  { logo: '/logos/lri.png', title: 'website chair + engines team', company: 'liquid rocketry at illinois', link: 'https://www.liquidrocket.org' },
-  { logo: '/logos/stellarsol.jpg', title: 'founder', company: 'stellarsol', link: 'https://x.com/stellarsolapp' },
-  { logo: '/logos/superteam_earn.png', title: 'founding team', company: 'superteam earn', link: 'https://earn.superteam.fun' },
-  { logo: '/logos/summer.svg', title: 'mentor + organizer', company: 'solana summer fellowship', link: 'https://summer.superteam.fun' },
-  { logo: '/logos/solana.png', title: 'devrel intern', company: 'solana foundation', link: 'https://solana.org' },
-  { logo: '/logos/lancer.jpg', title: 'fullstack dev', company: 'lancer', link: 'https://x.com/lancerworks' },
+  {
+    logo: '/logos/spicenet.jpg',
+    title: 'protocol engineer',
+    company: 'spicenet',
+    link: 'https://spicenet.io',
+  },
+  {
+    logo: '/logos/lri.png',
+    title: 'website chair + engines team',
+    company: 'liquid rocketry at illinois',
+    link: 'https://www.liquidrocket.org',
+  },
+  {
+    logo: '/logos/stellarsol.jpg',
+    title: 'founder',
+    company: 'stellarsol',
+    link: 'https://x.com/stellarsolapp',
+  },
+  {
+    logo: '/logos/superteam_earn.png',
+    title: 'founding team',
+    company: 'superteam earn',
+    link: 'https://earn.superteam.fun',
+  },
+  {
+    logo: '/logos/summer.svg',
+    title: 'mentor + organizer',
+    company: 'solana summer fellowship',
+    link: 'https://summer.superteam.fun',
+  },
+  {
+    logo: '/logos/solana.png',
+    title: 'devrel intern',
+    company: 'solana foundation',
+    link: 'https://solana.org',
+  },
+  {
+    logo: '/logos/lancer.jpg',
+    title: 'fullstack dev',
+    company: 'lancer',
+    link: 'https://x.com/lancerworks',
+  },
 ];
 
 const projects = [
-  { logo: '/logos/swift.webp', title: 'asymmed', desc: 'swift student challenge winner · learned swift & built project in 4 days without a mac', link: 'https://www.wwdcscholars.com/s/19C9A545-D5DF-451B-963D-382EC0AFE370/2023' },
-  { logo: '/logos/mbc.png', title: 'flume + optionsfi', desc: "2 prizes at mbc'25 · built both projects overnight", link: 'https://mbc.devpost.com/project-gallery' },
-  { logo: '/logos/discord.png', title: 'disbet', desc: 'sandstorm hackathon winner · built 4h before deadline', link: 'https://www.prnewswire.com/news-releases/betdex-announces-disbet-as-winner-of-solana-hackathon-sports-betting-ux-track-301740713.html' },
-  { logo: '/logos/solathon.svg', title: 'solathon', desc: '130k+ downloads · python sdk for solana', link: 'https://solathon.vercel.app' },
-  { logo: '/logos/salt.ico', title: 'salt analysis', desc: "5k+ users · find series of experiments to detect any salt", link: 'https://saltanalysis.com' },
+  {
+    logo: '/logos/swift.webp',
+    title: 'asymmed',
+    desc: 'swift student challenge winner · learned swift & built project in 4 days without a mac',
+    link: 'https://www.wwdcscholars.com/s/19C9A545-D5DF-451B-963D-382EC0AFE370/2023',
+  },
+  {
+    logo: '/logos/mbc.png',
+    title: 'flume + optionsfi',
+    desc: '2 prizes at mbc\'25 · built both projects overnight',
+    link: 'https://mbc.devpost.com/project-gallery',
+  },
+  {
+    logo: '/logos/discord.png',
+    title: 'disbet',
+    desc: 'sandstorm hackathon winner · built 4h before deadline',
+    link: 'https://www.prnewswire.com/news-releases/betdex-announces-disbet-as-winner-of-solana-hackathon-sports-betting-ux-track-301740713.html',
+  },
+  {
+    logo: '/logos/solathon.svg',
+    title: 'solathon',
+    desc: '130k+ downloads · python sdk for solana',
+    link: 'https://solathon.vercel.app',
+  },
+  {
+    logo: '/logos/salt.ico',
+    title: 'salt analysis',
+    desc: '5k+ users · find series of experiments to detect any salt',
+    link: 'https://saltanalysis.com',
+  },
 ];
 
 const Index: NextPage = function Index() {
@@ -72,7 +132,10 @@ const Index: NextPage = function Index() {
                 <img src={exp.logo} alt="" />
                 <div className={styles.chipText}>
                   <span className={styles.highlight}>{exp.title}</span>
-                  <span className={styles.dimmed}>@{exp.company}</span>
+                  <span className={styles.dimmed}>
+                    @
+                    {exp.company}
+                  </span>
                 </div>
               </a>
             ))}

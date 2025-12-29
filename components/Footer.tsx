@@ -12,7 +12,13 @@ export const Footer = function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.glassBar}>
-        <span>SYED AABIS AKHTAR | {year} &#169;</span>
+        <span>
+          SYED AABIS AKHTAR |
+          {' '}
+          {year}
+          {' '}
+          &#169;
+        </span>
         <div className={styles.icons}>
           <Link href="https://twitter.com/0xBolt" passHref legacyBehavior>
             <a target="_blank" rel="noopener noreferrer">
