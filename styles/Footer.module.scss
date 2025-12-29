@@ -34,10 +34,14 @@
         -webkit-mask-composite: xor;
         mask-composite: exclude;
         animation: rotate 3s linear infinite;
+        pointer-events: none;
+        z-index: 0;
     }
 
     >span {
         line-height: 1;
+        position: relative;
+        z-index: 1;
     }
 }
 
@@ -57,6 +61,8 @@
     display: flex;
     align-items: center;
     gap: 12px;
+    position: relative;
+    z-index: 1;
 
     >a {
         display: flex;
@@ -66,6 +72,8 @@
         opacity: 0.7;
         transition: opacity 0.2s;
         line-height: 0;
+        position: relative;
+        z-index: 1;
 
         &:hover {
             opacity: 1;

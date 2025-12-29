@@ -5,7 +5,16 @@
   width: 100%;
   padding: 40px 20px 20px;
   min-height: 100vh;
-  background: radial-gradient(ellipse at 50% 0%, rgba(56, 77, 142, 0.1) 0%, transparent 50%);
+  background: radial-gradient(ellipse at 50% 0%, rgba(91, 107, 164, 0.1) 0%, transparent 50%);
+  overflow-y: auto;
+}
+
+@media (min-width: 501px) {
+  .index {
+    height: 100vh;
+    overflow-y: hidden;
+    padding: 30px 20px 20px;
+  }
 }
 
 .content {
@@ -13,15 +22,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  width: 100%;
+  overflow-y: auto;
+}
+
+@media (min-width: 501px) {
+  .content {
+    justify-content: center;
+    overflow-y: hidden;
+  }
 }
 
 .mainBox {
   width: 100%;
-  max-width: 820px;
+  max-width: 750px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
 
   h1 {
     font-size: 40px;
@@ -65,7 +83,7 @@
     }
 
     span {
-      color: #93645a;
+      color: #aa695a;
       font-weight: 500;
     }
   }
@@ -96,8 +114,14 @@
 
 .section {
   width: 100%;
-  max-width: 820px;
+  max-width: 750px;
   margin-top: 28px;
+}
+
+@media (min-width: 501px) {
+  .section {
+    margin-top: 32px;
+  }
 }
 
 .sectionLabel {
@@ -111,13 +135,13 @@
 .chipGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 6px;
+  gap: 4px;
 }
 
 .chip {
   display: flex;
   align-items: flex-start;
-  gap: 8px;
+  gap: 7px;
   padding: 10px 12px;
   background: linear-gradient(165deg,
       rgba(140, 160, 220, 0.07) 0%,
@@ -125,7 +149,7 @@
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(160, 180, 220, 0.1);
-  border-radius: 12px;
+  border-radius: 10px;
   font-size: 14px;
   color: #7b8797;
   text-decoration: none;
@@ -144,24 +168,28 @@
   }
 
   img {
-    width: 20px;
-    height: 20px;
-    border-radius: 5px;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
     flex-shrink: 0;
-    margin-top: 1px;
+    margin-top: 0;
+    align-self: flex-start;
   }
 }
 
 .chipText {
   display: flex;
   flex-direction: column;
-  gap: 1px;
+  gap: 5px;
   min-width: 0;
+  align-items: flex-start;
 }
 
 .highlight {
   color: #ddd;
   font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
 }
 
 .dimmed {
@@ -172,21 +200,21 @@
 .projectList {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 4px;
 }
 
 .projectItem {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
-  padding: 10px 14px;
+  padding: 10px 12px;
   background: linear-gradient(165deg,
       rgba(140, 160, 220, 0.06) 0%,
       rgba(140, 160, 220, 0.015) 100%);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(160, 180, 220, 0.08);
-  border-radius: 10px;
+  border-radius: 8px;
   font-size: 14px;
   text-decoration: none;
   transition: all 0.2s ease;
@@ -204,21 +232,36 @@
   }
 
   img {
-    width: 16px;
-    height: 16px;
-    border-radius: 4px;
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
     flex-shrink: 0;
+    margin-top: 0;
+    align-self: flex-start;
   }
+}
+
+.projectContent {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+  min-width: 0;
 }
 
 .projectTitle {
   color: #ccc;
   font-weight: 500;
-  flex-shrink: 0;
+  font-size: 14px;
+  line-height: 0.9;
 }
 
 .projectDesc {
   color: #7b8797;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.35;
+  font-size: 13px;
 }
 
 .dmsText {
@@ -250,5 +293,18 @@
 @media (max-width: 500px) {
   .chipGrid {
     grid-template-columns: 1fr;
+  }
+
+  .projectItem {
+    gap: 8px;
+    padding: 8px 10px;
+  }
+
+  .projectContent {
+    gap: 3px;
+  }
+
+  .projectDesc {
+    line-height: 1.4;
   }
 }

@@ -61,7 +61,7 @@ const projects = [
   {
     logo: '/logos/mbc.png',
     title: 'flume + optionsfi',
-    desc: '2 prizes at mbc\'25 · built both projects overnight',
+    desc: 'two prizes at mbc\'25 · built both projects overnight',
     link: 'https://mbc.devpost.com/project-gallery',
   },
   {
@@ -154,8 +154,10 @@ const Index: NextPage = function Index() {
                 className={styles.projectItem}
               >
                 <img src={proj.logo} alt="" />
-                <span className={styles.projectTitle}>{proj.title}</span>
-                <span className={styles.projectDesc}>{proj.desc}</span>
+                <div className={styles.projectContent}>
+                  <span className={styles.projectTitle}>{proj.title}</span>
+                  <span className={styles.projectDesc}>{proj.desc}</span>
+                </div>
               </a>
             ))}
           </div>

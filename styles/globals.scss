@@ -21,6 +21,15 @@ body {
   color: #ffffff;
   position: relative;
   min-height: 100vh;
+  overflow-x: hidden;
+}
+
+@media (min-width: 501px) {
+  html,
+  body {
+    overflow-y: hidden;
+    height: 100vh;
+  }
 }
 
 a {
