@@ -43,12 +43,6 @@ const experience = [
     company: 'solana foundation',
     link: 'https://solana.org',
   },
-  {
-    logo: '/logos/lancer.jpg',
-    title: 'fullstack dev',
-    company: 'lancer',
-    link: 'https://x.com/lancerworks',
-  },
 ];
 
 const projects = [
@@ -168,7 +162,7 @@ const Index: NextPage = function Index() {
             ·
             {' '}
             <a href="mailto:mail@aabis.dev">
-              mail@aabis.dev
+              hi@aab.is
             </a>
           </p>
         </div>
