@@ -61,7 +61,7 @@ const projects = [
   {
     logo: '/logos/mbc.png',
     title: 'flume + optionsfi',
-    desc: 'two prizes at mbc\'25 · built both projects overnight',
+    desc: 'two prizes at MBC\'25 · built both projects overnight',
     link: 'https://mbc.devpost.com/project-gallery',
   },
   {
@@ -102,20 +102,10 @@ const Index: NextPage = function Index() {
               className={styles.uiucLink}
             >
               <img src="/logos/uiuc.png" alt="uiuc" />
-              <span>uiuc</span>
+              <span>UIUC</span>
             </a>
           </p>
 
-          <div className={styles.identity}>
-            <div>
-              <img src="/bolt.png" alt="bolt" />
-              <p>bolt online</p>
-            </div>
-            <div>
-              <img src="/me.png" alt="me" />
-              <p>not anon</p>
-            </div>
-          </div>
         </div>
 
         <div className={styles.section}>
@@ -165,14 +155,14 @@ const Index: NextPage = function Index() {
 
         <div className={styles.section}>
           <p className={styles.dmsText}>
-            dms open on
+            my DMs are always open on
             {' '}
             <a
               href="https://twitter.com/0xBolt"
               target="_blank"
               rel="noreferrer"
             >
-              x
+              X
             </a>
             {' '}
             ·

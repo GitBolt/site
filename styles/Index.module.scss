@@ -5,7 +5,7 @@
   width: 100%;
   padding: 40px 20px 20px;
   min-height: 100vh;
-  background: radial-gradient(ellipse at 50% 0%, rgba(91, 107, 164, 0.1) 0%, transparent 50%);
+  background: #141414;
   overflow-y: auto;
 }
 
@@ -89,28 +89,6 @@
   }
 }
 
-.identity {
-  display: flex;
-  gap: 16px;
-  margin-top: 12px;
-
-  div {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    img {
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-    }
-
-    p {
-      color: #7b8797;
-      font-size: 15px;
-    }
-  }
-}
 
 .section {
   width: 100%;
