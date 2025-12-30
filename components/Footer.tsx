@@ -7,8 +7,6 @@ import GitHub from '@/public/icons/github.svg';
 import LinkedIn from '@/public/icons/linkedin.svg';
 
 export const Footer = function Footer() {
-  const year = new Date().getFullYear();
-
   return (
     <footer className={styles.footer}>
       <div className={styles.glassBar}>
