@@ -9,13 +9,13 @@ import { PageHead } from '@/components/Head';
 const experience = [
   {
     logo: '/logos/spicenet.jpg',
-    title: 'protocol engineer',
+    title: 'founding protocol engineer',
     company: 'spicenet',
     link: 'https://spicenet.io',
   },
   {
     logo: '/logos/lri.png',
-    title: 'website chair + engines team',
+    title: 'engine fluids + admin director',
     company: 'liquid rocketry at illinois',
     link: 'https://www.liquidrocket.org',
   },
@@ -47,15 +47,27 @@ const experience = [
 
 const projects = [
   {
+    logo: '/logos/pythia.jpg',
+    title: 'pythia markets',
+    desc: '$18k winner at cypherpunk 2025 · prediction markets infra',
+    link: 'https://arena.colosseum.org/projects/explore/pythia',
+  },
+  {
     logo: '/logos/swift.webp',
     title: 'asymmed',
-    desc: 'swift student challenge winner · learned swift & built project in 4 days without a mac',
+    desc: 'swift student challenge winner · learned swift + built app in 4 days without a mac',
     link: 'https://www.wwdcscholars.com/s/19C9A545-D5DF-451B-963D-382EC0AFE370/2023',
+  },
+  {
+    logo: '/logos/superteam_ctf.ico',
+    title: 'superteam ctf',
+    desc: 'designed all 14 crypto/security challenges for microsoft-hosted event',
+    link: 'https://ctf.superteam.fun',
   },
   {
     logo: '/logos/mbc.png',
     title: 'flume + optionsfi',
-    desc: 'two prizes at MBC\'25 · built both projects overnight',
+    desc: 'two prizes at mbc\'25 ($7k) · built both projects overnight',
     link: 'https://mbc.devpost.com/project-gallery',
   },
   {
@@ -73,7 +85,7 @@ const projects = [
   {
     logo: '/logos/salt.ico',
     title: 'salt analysis',
-    desc: '5k+ users · find series of experiments to detect any salt',
+    desc: 'interactive chemistry experiment workflow tool · 5k+ users',
     link: 'https://saltanalysis.com',
   },
 ];
