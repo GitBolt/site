@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560">
-  <rect width="960" height="560" fill="#f5f5f7"/>
-  <circle cx="174" cy="190" r="82" fill="#171719"/><path d="M174 135c-28 0-47 21-47 49 0 23 15 36 31 43v34h33v-34c17-7 31-20 31-43 0-28-19-49-48-49Zm0 25c13 0 21 10 21 24 0 13-8 21-21 21s-21-8-21-21c0-14 8-24 21-24Z" fill="#fff"/>
-  <text x="298" y="178" fill="#171719" font-family="Inter,Arial,sans-serif" font-size="30" letter-spacing="3">APPLE</text>
-  <text x="298" y="238" fill="#171719" font-family="Inter,Arial,sans-serif" font-size="51" font-weight="700">Swift Student Challenge</text>
-  <text x="74" y="382" fill="#53535a" font-family="Inter,Arial,sans-serif" font-size="36">2023 winner · built in four days</text>
-  <text x="74" y="442" fill="#86868b" font-family="Inter,Arial,sans-serif" font-size="27">AsymmED · asymmetric encryption, made tangible</text>
-</svg>

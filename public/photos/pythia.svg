@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560">
-  <defs><linearGradient id="g" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#142a4a"/><stop offset="1" stop-color="#285a91"/></linearGradient></defs>
-  <rect width="960" height="560" fill="url(#g)"/>
-  <text x="72" y="128" fill="#9ed3ff" font-family="Inter,Arial,sans-serif" font-size="24" letter-spacing="4">COLOSSEUM CYPHERPUNK 2025</text>
-  <text x="70" y="280" fill="#fff" font-family="Inter,Arial,sans-serif" font-size="92" font-weight="700">Pythia · $18k</text>
-  <text x="74" y="352" fill="#c3d8ec" font-family="Inter,Arial,sans-serif" font-size="34">University Prize + Arcium sidetrack</text>
-  <text x="74" y="444" fill="#8fb4d3" font-family="Inter,Arial,sans-serif" font-size="27">Confidential prediction-market infrastructure</text>
-</svg>

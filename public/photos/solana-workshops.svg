@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560">
-  <rect width="960" height="560" fill="#121316"/>
-  <path d="M75 130h230l65 65H140z" fill="#9945ff"/><path d="M75 280h230l65-65H140z" fill="#14f195"/>
-  <text x="430" y="180" fill="#fff" font-family="Inter,Arial,sans-serif" font-size="42" font-weight="650">developer education</text>
-  <text x="430" y="238" fill="#8e97a8" font-family="Inter,Arial,sans-serif" font-size="26">Solana Foundation · 2023</text>
-  <g font-family="Inter,Arial,sans-serif"><text x="75" y="430" fill="#fff" font-size="110" font-weight="700">4</text><text x="188" y="416" fill="#b5bdca" font-size="35">hands-on workshops</text></g>
-</svg>
