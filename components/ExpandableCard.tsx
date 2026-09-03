@@ -10,6 +10,7 @@ export type CardMedia = {
   alt: string;
   caption: string;
   href?: string;
+  poster?: string;
   position?: string;
 };
 
@@ -26,7 +27,7 @@ type ExpandableCardProps = { card: CardData; variant: 'work' | 'project' };
 
 const Media = function Media({ item }: { item: CardMedia }) {
   const content = item.type === 'video' ? (
-    <video controls playsInline preload="metadata" aria-label={item.alt}>
+    <video controls playsInline preload="metadata" poster={item.poster} aria-label={item.alt}>
       <source src={item.src} type="video/mp4" />
     </video>
   ) : (
@@ -35,12 +36,19 @@ const Media = function Media({ item }: { item: CardMedia }) {
 
   return (
     <figure className={styles.mediaItem}>
-      {item.href ? (
+      {item.href && item.type !== 'video' ? (
         <a href={item.href} target="_blank" rel="noreferrer" aria-label={`${item.alt} — open source`}>
           {content}
         </a>
       ) : content}
-      <figcaption>{item.caption}</figcaption>
+      <figcaption>
+        {item.href && item.type === 'video' ? (
+          <a href={item.href} target="_blank" rel="noreferrer">
+            {item.caption}
+            <span aria-hidden="true"> ↗</span>
+          </a>
+        ) : item.caption}
+      </figcaption>
     </figure>
   );
 };

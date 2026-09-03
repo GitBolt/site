@@ -275,6 +275,14 @@
     color: #808a99;
     font-size: 10.5px;
     line-height: 1.35;
+
+    a {
+      display: block;
+      transition: color 150ms ease;
+
+      &:hover { color: #b5becb; opacity: 1; }
+      &:focus-visible { outline: 2px solid #95a9da; outline-offset: 2px; }
+    }
   }
 }
 

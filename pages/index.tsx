@@ -10,27 +10,32 @@ const aerospace: CardData[] = [
   {
     logo: '/logos/lri.png',
     title: 'engine fluids + admin director',
-    subtitle: '@ liquid rocketry at illinois',
-    description: 'Built and tested feed-system hardware for Overture Mk1, including tube fabrication, plumbing, water-flow, cold-flow, and hotfire operations. I also rebuilt the team website and later served as Administrative Director.',
+    subtitle: 'student liquid rocket team @ uiuc',
+    description: 'Built and tested feed-system hardware for Overture Mk1, our student-developed liquid bipropellant rocket engine, including tube fabrication, plumbing, water-flow, cold-flow, and hotfire operations. I also rebuilt the team website and later served as Administrative Director.',
     links: [
       { label: 'team website', href: 'https://www.liquidrocket.org' },
       { label: 'may 2026 hotfire', href: 'https://www.linkedin.com/posts/liquid-rocket-illinois_on-sunday-may-3rd-lri-had-our-first-hotfire-activity-7460779425371037697-9cob' },
-      { label: 'cold-flow interview', href: 'https://www.linkedin.com/posts/liquid-rocket-illinois_james-vranas-our-engine-lead-breaks-down-activity-7450625893338898432-7qsi' },
-      { label: 'test-stand software', href: 'https://github.com/liquid-rocketry-illinois/test-stand-sw' },
     ],
     media: [
+      {
+        src: '/media/lri/overture-hotfire.mp4',
+        type: 'video',
+        poster: '/media/lri/overture-hotfire-poster.jpg',
+        alt: 'Overture Mk1 firing during its first hotfire',
+        caption: 'Overture Mk1 · first hotfire · May 3, 2026 · 17 sec',
+      },
+      {
+        src: '/media/lri/overture-cold-flow.mp4',
+        type: 'video',
+        poster: '/media/lri/overture-cold-flow-poster.jpg',
+        alt: 'Overture Mk1 feed system during a cold-flow test',
+        caption: 'Overture Mk1 · cold-flow test · Apr. 14, 2026 · 15 sec',
+      },
       {
         src: '/media/lri/overture-hotfire.jpg',
         alt: 'Overture Mk1 firing on the test stand',
         caption: 'Overture Mk1 · first hotfire · May 3, 2026',
         href: 'https://www.linkedin.com/company/liquid-rocket-illinois',
-      },
-      { src: '/media/lri/rand-e-feed-system.jpg', alt: 'RAND-E engine and feed system on the test stand', caption: 'RAND-E feed system and integrated gas panel' },
-      {
-        src: '/media/lri/test-fire.mp4',
-        type: 'video',
-        alt: 'Liquid rocket engine test-fire video',
-        caption: 'Test campaign footage · LRI archive',
       },
       { src: '/media/lri/overture-engine.jpg', alt: 'Overture Mk1 liquid rocket engine', caption: 'Overture Mk1 engine hardware' },
     ],
@@ -54,19 +59,16 @@ const aerospace: CardData[] = [
   {
     logo: '/logos/anduril.png',
     title: 'anduril drone racing',
-    subtitle: 'autonomous racing · spring 2026',
+    subtitle: 'gps-denied autonomous drone race · spring 2026',
     description: 'Built a GPS-denied vision and control stack for Anduril’s autonomous drone-racing competition using OpenCV, IMU guidance, and a racing-line controller. Advanced past Round 1 with no crashes in the evaluated runs.',
     links: [{ label: 'ai grand prix', href: 'https://www.anduril.com/news/anduril-launches-the-ai-grand-prix-a-global-autonomous-drone-race' }],
   },
   {
     logo: '/logos/nmcad.png',
     title: 'research intern',
-    subtitle: '@ nmcad lab · iisc',
-    description: 'Developed a k-nearest-neighbor analyzer for syntactic-foam research and rebuilt the laboratory website during a research internship at the Indian Institute of Science.',
-    links: [
-      { label: 'nmcad lab', href: 'https://aero.iisc.ac.in/people/dinesh/web/index.php' },
-      { label: 'iisc aerospace', href: 'https://aero.iisc.ac.in' },
-    ],
+    subtitle: 'aerospace materials research @ iisc',
+    description: 'Developed a k-nearest-neighbor analyzer for syntactic foam, a lightweight composite used in aerospace and marine structures, and rebuilt the laboratory website during a research internship at the Indian Institute of Science.',
+    links: [{ label: 'website I rebuilt', href: 'https://aero.iisc.ac.in/people/dinesh/web/index.php' }],
   },
 ];
 
@@ -74,34 +76,33 @@ const experience: CardData[] = [
   {
     logo: '/logos/spacexai.png',
     title: 'campus lead',
-    subtitle: '@ spacexai · uiuc',
+    subtitle: 'ai developer community @ spacexai · uiuc',
     description: 'Representing UIUC in SpaceXAI’s campus program through developer workshops, hackathons, build nights, and student collaborations.',
-    links: [
-      { label: 'my announcement', href: 'https://www.linkedin.com/posts/0xbolt_ill-be-representing-university-of-illinois-activity-7486972381840826368-Qo1w' },
-      { label: 'post on x', href: 'https://x.com/0xBolt/status/2091614481860231402' },
-      { label: 'official brand page', href: 'https://x.ai/legal/brand-guidelines' },
-    ],
+    links: [{ label: 'role announcement', href: 'https://x.com/0xBolt/status/2091614481860231402' }],
   },
   {
     logo: '/logos/spicenet.jpg',
     title: 'founding protocol engineer',
-    subtitle: '@ spicenet',
-    description: 'Built protocol and product infrastructure across Rust trading vaults, the Spicenet rollup, and the SpiceFlow TypeScript and React SDK used inside partner applications.',
+    subtitle: 'cross-chain defi infrastructure @ spicenet',
+    description: 'Built Rust trading vaults, rollup infrastructure, and the TypeScript and React SpiceFlow SDK. The SDK powered Brokex and Elitra devnets for 29,000 users—77% and 81% said the experience felt fully native—and later the Reppo private mainnet beta, with 10+ app integrations spanning 9 testnets.',
     links: [
       { label: 'spicenet', href: 'https://spicenet.io' },
       { label: 'spiceflow package', href: 'https://www.npmjs.com/package/@spicenet-io/spiceflow-ui' },
-      { label: 'public beta release', href: 'https://x.com/spicenetio/status/2089352984597762197' },
+      { label: '29k-user devnets', href: 'https://spicenet.io/blogs/spicenet-roadmap' },
+      { label: 'reppo mainnet beta', href: 'https://portal.spicenet.io/campaigns' },
     ],
     media: [{ src: '/photos/spiceflow.png', alt: 'The real SpiceFlow funding interface', caption: 'SpiceFlow product interface' }],
   },
   {
     logo: '/logos/stellarsol.jpg',
     title: 'founder',
-    subtitle: '@ stellarsol',
+    subtitle: 'solana payments startup · 2nd of 750',
     description: 'Co-founded a Solana payments product and led its engineering through the Summer Camp hackathon, placing second in the Payments track among 750 submissions. StellarSOL later received a Solana Foundation grant and was featured by The Information.',
     links: [
       { label: 'stellarsol on x', href: 'https://x.com/stellarsolapp' },
       { label: 'summer camp results', href: 'https://solana.com/news/solana-summer-camp-winners' },
+      { label: 'product demo', href: 'https://x.com/0xBolt/status/1547898009484402689' },
+      { label: 'launch thread', href: 'https://x.com/StellarSolApp/status/1544300773533962240' },
       { label: 'the information', href: 'https://www.theinformation.com/articles/here-come-the-zoomers-silicon-valley-greets-a-new-generation-of-teen-founders' },
     ],
     media: [
@@ -109,20 +110,32 @@ const experience: CardData[] = [
         src: '/media/work/the-information-profile.jpg',
         alt: 'The Crypto Prodigies section of The Information featuring a portrait of Aabis at age 16',
         caption: 'The Information · “The Crypto Prodigies” · Mar. 2023',
-        href: 'https://www.theinformation.com/articles/here-come-the-zoomers-silicon-valley-greets-a-new-generation-of-teen-founders',
       },
       {
         src: '/media/work/the-information-excerpt.jpg',
         alt: 'The Information excerpt describing Aabis and StellarSOL',
-        caption: 'Article excerpt naming Aabis and StellarSOL · personal PDF archive',
-        href: 'https://www.theinformation.com/articles/here-come-the-zoomers-silicon-valley-greets-a-new-generation-of-teen-founders',
+        caption: 'Article excerpt naming Aabis and StellarSOL · readable here without the paywall',
+      },
+      {
+        src: '/media/work/stellarsol-launch.jpg',
+        alt: 'Original StellarSOL artwork showing purchases from Flipkart and Amazon with Solana',
+        caption: 'Original StellarSOL launch artwork · Jul. 2022',
+        href: 'https://x.com/StellarSolApp/status/1544300773533962240',
+      },
+      {
+        src: '/media/work/stellarsol-demo.mp4',
+        type: 'video',
+        poster: '/media/work/stellarsol-demo-poster.jpg',
+        alt: 'StellarSOL browser extension purchasing an item from Flipkart with USDC',
+        caption: 'Buying from Flipkart with USDC through StellarSOL · product demo',
+        href: 'https://x.com/0xBolt/status/1547898009484402689',
       },
     ],
   },
   {
     logo: '/logos/superteam_earn.png',
     title: 'founding team',
-    subtitle: '@ superteam earn',
+    subtitle: 'crypto jobs + bounties marketplace @ superteam earn',
     description: 'Helped build the original frontend for Superteam’s bounties, grants, and jobs platform. The early product reached roughly 1,500 weekly viewers while listing millions of dollars in opportunities.',
     links: [
       { label: 'superteam earn', href: 'https://earn.superteam.fun' },
@@ -138,19 +151,26 @@ const experience: CardData[] = [
   {
     logo: '/logos/summer.svg',
     title: 'mentor + organizer',
-    subtitle: '@ solana summer fellowship',
+    subtitle: '8-week solana builder program · 42 of 583 selected',
     description: 'Organized and mentored an eight-week program for 42 builders selected from 583 applicants across 15 countries, helping run the curriculum, technical sessions, and project support.',
     links: [{ label: 'fellowship archive', href: 'https://summer.superteam.fun' }],
   },
   {
     logo: '/logos/solana.png',
     title: 'devrel intern',
-    subtitle: '@ solana foundation',
-    description: 'Designed and delivered four hands-on developer workshops, including a first Solana program and poll application for new builders.',
+    subtitle: 'developer education @ solana foundation · 4 workshops',
+    description: 'Designed and delivered four hands-on developer workshops across four universities, drawing 1,000 registrations and helping participants mint more than 300 NFTs. The curriculum included a first Solana program, a bank simulator, and a poll application.',
     links: [
-      { label: 'solana foundation', href: 'https://solana.org' },
-      { label: 'developer repositories', href: 'https://github.com/solana-developers' },
+      { label: 'workshop metrics', href: 'https://x.com/0xBolt/status/1696191692330676230' },
+      { label: 'bank workshop', href: 'https://github.com/GitBolt/solana-bank-workshop' },
+      { label: 'poll workshop', href: 'https://github.com/GitBolt/solana-poll' },
     ],
+    media: [{
+      src: '/media/work/solana-workshop-metrics.jpg',
+      alt: 'Metrics from four Solana university workshops',
+      caption: '4 university workshops · 1,000 registrations · 300+ NFTs',
+      href: 'https://x.com/0xBolt/status/1696191692330676230',
+    }],
   },
 ];
 
@@ -166,7 +186,7 @@ const projects: CardData[] = [
   {
     logo: '/logos/swift.webp',
     title: 'asymmed',
-    subtitle: 'apple swift student challenge winner · 2023',
+    subtitle: 'encryption learning app · apple swift winner 2023',
     description: 'Learned Swift and built an interactive app explaining asymmetric encryption through a blockchain transaction in four days, winning Apple’s 2023 Swift Student Challenge.',
     links: [
       { label: 'winner profile', href: 'https://www.wwdcscholars.com/s/19C9A545-D5DF-451B-963D-382EC0AFE370/2023' },
@@ -181,13 +201,25 @@ const projects: CardData[] = [
   {
     logo: '/logos/superteam_ctf.ico',
     title: 'superteam ctf',
-    subtitle: 'two security events · challenge designer + organizer',
-    description: 'Designed the crypto, smart-contract, reverse-engineering, and systems challenges for two in-person Superteam CTFs, including the first Microsoft-hosted event in Bengaluru.',
+    subtitle: 'crypto security competition · 14 challenges · 2 events',
+    description: 'Designed all 14 cryptography, smart-contract, reverse-engineering, and systems challenges for the first in-person competition at Microsoft Bengaluru, then returned as an organizer for the second edition, attended by 76 people at Localhost HQ.',
     links: [
       { label: 'play ctf', href: 'https://ctf.superteam.fun' },
       { label: 'event recap', href: 'https://www.linkedin.com/feed/update/urn:li:activity:7487727447392829440/' },
     ],
-    media: [{ src: '/media/projects/superteam-ctf-presenting.jpg', alt: 'Aabis presenting at the Microsoft-hosted Superteam CTF', caption: 'Presenting the CTF at Microsoft Bengaluru' }],
+    media: [{
+      src: '/media/projects/superteam-ctf-v2.jpg',
+      alt: 'Official Superteam CTF v2 event artwork',
+      caption: 'Superteam CTF v2 · 76 attendees · Localhost Bengaluru',
+      href: 'https://ctf.superteam.fun',
+    }, {
+      src: '/media/projects/superteam-ctf-live.mp4',
+      type: 'video',
+      poster: '/media/projects/superteam-ctf-live-poster.jpg',
+      alt: 'Participants solving challenges at the first Superteam CTF',
+      caption: 'Live competition floor · first Superteam CTF · 5 sec',
+      href: 'https://x.com/0xBolt/status/1948962210811687093',
+    }],
   },
   {
     logo: '/logos/catwatch.png',
@@ -200,9 +232,12 @@ const projects: CardData[] = [
   {
     logo: '/logos/mbc.png',
     title: 'flume + optionsfi',
-    subtitle: 'two prizes at mbc ’25 · $5k total',
+    subtitle: 'defi builder tools · 2 prizes at mbc ’25 · $5k total',
     description: 'Built Flume, a visual interface for composing DeFi actions, and helped ship OptionsFi during the same overnight sprint. The two projects placed fourth and second at MBC 2025.',
-    links: [{ label: 'mbc project gallery', href: 'https://mbc.devpost.com/project-gallery' }],
+    links: [
+      { label: 'flume source code', href: 'https://github.com/GitBolt/flume' },
+      { label: 'mbc project gallery', href: 'https://mbc.devpost.com/project-gallery?page=3' },
+    ],
     media: [{
       src: '/media/projects/mbc-build.jpg',
       alt: 'Aabis building at the Midwest Blockchain Conference with the OptionsFi code open',
@@ -213,7 +248,7 @@ const projects: CardData[] = [
   {
     logo: '/logos/discord.png',
     title: 'disbet',
-    subtitle: 'sandstorm hackathon winner · built in 4 hours',
+    subtitle: 'discord sports-betting app · $3k winner · built in 4 hours',
     description: 'Built a Discord-native sports-betting experience on Monaco Protocol in four hours. Won the Sandstorm UX track, a $3,000 prize, and two Breakpoint tickets.',
     links: [
       { label: 'my launch thread', href: 'https://x.com/0xBolt/status/1621828714152730624' },
@@ -252,6 +287,7 @@ const projects: CardData[] = [
     links: [
       { label: 'source code', href: 'https://github.com/GitBolt/soltrek' },
       { label: 'on-chain program', href: 'https://github.com/GitBolt/soltrek-program' },
+      { label: 'accelerator acceptance', href: 'https://x.com/0xBolt/status/1654358846511501312' },
     ],
   },
 ];
