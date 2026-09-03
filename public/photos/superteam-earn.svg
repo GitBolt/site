@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560">
+  <rect width="960" height="560" fill="#f6f1ff"/>
+  <rect x="66" y="64" width="828" height="432" rx="30" fill="#fff" stroke="#e3d7f8" stroke-width="3"/>
+  <rect x="112" y="110" width="70" height="70" rx="18" fill="#7c3aed"/>
+  <path d="m132 145 16 16 31-35" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="214" y="155" fill="#27202f" font-family="Inter,Arial,sans-serif" font-size="34" font-weight="700">Superteam Earn</text>
+  <text x="112" y="270" fill="#17131d" font-family="Inter,Arial,sans-serif" font-size="49" font-weight="650">Find work. Build proof.</text>
+  <text x="112" y="328" fill="#6c6475" font-family="Inter,Arial,sans-serif" font-size="28">Bounties, grants, and jobs for Web3 builders.</text>
+  <rect x="112" y="388" width="245" height="64" rx="14" fill="#7c3aed"/>
+  <text x="161" y="430" fill="#fff" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="600">Product Hunt ↗</text>
+</svg>

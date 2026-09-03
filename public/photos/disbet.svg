@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560">
+  <rect width="960" height="560" fill="#232449"/>
+  <path d="M146 122c-40 6-70 22-70 22s-23 34-29 145c33 39 82 45 82 45l20-27c-26-8-37-20-37-20 51 25 113 25 164 0 0 0-11 12-37 20l20 27s49-6 82-45c-6-111-29-145-29-145s-30-16-70-22l-9 18a290 290 0 0 0-78 0l-9-18Z" fill="#8b91ff"/>
+  <circle cx="145" cy="235" r="22" fill="#fff"/><circle cx="243" cy="235" r="22" fill="#fff"/>
+  <text x="420" y="205" fill="#aeb2ff" font-family="Inter,Arial,sans-serif" font-size="25" letter-spacing="4">SANDSTORM WINNER</text>
+  <text x="418" y="302" fill="#fff" font-family="Inter,Arial,sans-serif" font-size="78" font-weight="700">Disbet</text>
+  <text x="422" y="374" fill="#c3c6e7" font-family="Inter,Arial,sans-serif" font-size="31">sports betting, inside Discord</text>
+  <text x="422" y="434" fill="#9297c9" font-family="Inter,Arial,sans-serif" font-size="27">built in four hours · $3,000 prize</text>
+</svg>

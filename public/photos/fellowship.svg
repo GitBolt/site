@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560">
+  <defs><linearGradient id="g" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#142a27"/><stop offset="1" stop-color="#2d6652"/></linearGradient></defs>
+  <rect width="960" height="560" fill="url(#g)"/>
+  <text x="76" y="110" fill="#9ff6c9" font-family="Inter,Arial,sans-serif" font-size="24" letter-spacing="3">SOLANA SUMMER FELLOWSHIP</text>
+  <g font-family="Inter,Arial,sans-serif" fill="#fff"><text x="74" y="270" font-size="112" font-weight="700">42</text><text x="354" y="270" font-size="112" font-weight="700">23</text><text x="654" y="270" font-size="112" font-weight="700">8</text></g>
+  <g font-family="Inter,Arial,sans-serif" fill="#b7d9cd" font-size="27"><text x="82" y="322">fellows</text><text x="364" y="322">sessions</text><text x="668" y="322">weeks</text></g>
+  <text x="76" y="448" fill="#e2fff3" font-family="Inter,Arial,sans-serif" font-size="34">Selected from 583 applicants worldwide.</text>
+</svg>
