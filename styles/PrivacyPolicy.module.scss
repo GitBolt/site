@@ -1,0 +1,99 @@
+.page {
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding:
+    max(52px, env(safe-area-inset-top))
+    max(clamp(20px, 6vw, 72px), env(safe-area-inset-right))
+    max(72px, env(safe-area-inset-bottom))
+    max(clamp(20px, 6vw, 72px), env(safe-area-inset-left));
+  color: #514c78;
+  background: #d5d4f2;
+}
+
+.article {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+
+  h1 {
+    margin: 0 0 clamp(36px, 6vw, 52px);
+    color: #3f3a6b;
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    font-weight: 750;
+    line-height: 1.03;
+    letter-spacing: -0.045em;
+    text-align: center;
+    text-wrap: balance;
+  }
+
+  h2 {
+    margin: clamp(36px, 6vw, 48px) 0 12px;
+    color: #4d4294;
+    font-size: clamp(1.45rem, 3vw, 2rem);
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: -0.025em;
+    text-wrap: balance;
+  }
+
+  p,
+  ul {
+    margin: 0 0 20px;
+    color: #514c78;
+    font-size: clamp(1rem, 1.4vw, 1.075rem);
+    line-height: 1.7;
+  }
+
+  p { max-width: 72ch; text-wrap: pretty; }
+
+  ul {
+    padding-left: clamp(22px, 4vw, 32px);
+    list-style: disc;
+  }
+
+  ul ul {
+    margin: 8px 0 0;
+    padding-left: clamp(20px, 4vw, 28px);
+  }
+
+  li + li { margin-top: 7px; }
+
+  a {
+    border-radius: 3px;
+    color: #493d99;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: rgba(73, 61, 153, 0.4);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    overflow-wrap: anywhere;
+    transition-property: color, text-decoration-color;
+    transition-duration: 150ms;
+  }
+
+  a:focus-visible { outline-color: #493d99; }
+}
+
+.lastUpdated {
+  padding-top: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .article a:hover {
+    color: #3d327f;
+    text-decoration-color: currentColor;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 520px) {
+  .page {
+    padding-top: max(38px, env(safe-area-inset-top));
+    padding-bottom: max(52px, env(safe-area-inset-bottom));
+  }
+
+  .article h1 { text-align: left; }
+  .lastUpdated { text-align: left; }
+}

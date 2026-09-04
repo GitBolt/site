@@ -1,89 +1,58 @@
 .footer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 8px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 8px;
 }
 
 .glassBar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 12px 26px;
-    background: linear-gradient(165deg,
-            rgba(255, 255, 255, 0.05) 0%,
-            rgba(255, 255, 255, 0.01) 100%);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.05),
-        0 4px 12px rgba(0, 0, 0, 0.2);
-    border-radius: 50px;
-    font-weight: 400;
-    font-size: 12px;
-    color: #9aa5b8;
-    position: relative;
-
-    &::before {
-        content: '';
-        position: absolute;
-        inset: -1px;
-        border-radius: 50px;
-        padding: 1px;
-        background: conic-gradient(from var(--angle, 0deg),
-                transparent 0%,
-                rgba(113, 118, 133, 0.3) 10%,
-                transparent 20%,
-                transparent 100%);
-        -webkit-mask: linear-gradient(#2b2929 0 0) content-box, linear-gradient(#272525 0 0);
-        mask: linear-gradient(#292828 0 0) content-box, linear-gradient(#2b2929 0 0);
-        -webkit-mask-composite: xor;
-        mask-composite: exclude;
-        animation: rotate 3s linear infinite;
-        pointer-events: none;
-        z-index: 0;
-    }
-
-    >span {
-        line-height: 1;
-        position: relative;
-        z-index: 1;
-    }
-}
-
-@property --angle {
-    syntax: '<angle>';
-    initial-value: 0deg;
-    inherits: false;
-}
-
-@keyframes rotate {
-    to {
-        --angle: 360deg;
-    }
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-top-color: rgba(255, 255, 255, 0.13);
+  border-radius: 50px;
+  color: #9aa5b8;
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.035), 0 4px 12px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
 .icons {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 0;
+
+  > a {
     display: flex;
+    width: 44px;
+    height: 44px;
     align-items: center;
-    gap: 12px;
-    position: relative;
-    z-index: 1;
+    justify-content: center;
+    border-radius: 999px;
+    line-height: 0;
+    opacity: 0.7;
+    transition-property: background-color, opacity, transform;
+    transition-duration: 150ms;
 
-    >a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 4px;
-        opacity: 0.7;
-        transition: opacity 0.2s;
-        line-height: 0;
-        position: relative;
-        z-index: 1;
-
-        &:hover {
-            opacity: 1;
-        }
+    &:focus-visible {
+      outline: 2px solid var(--focus-ring);
+      outline-offset: 2px;
+      opacity: 1;
     }
+
+    &:active { transform: scale(0.96); }
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .icons > a:hover {
+    background: rgba(255, 255, 255, 0.045);
+    opacity: 1;
+  }
 }
