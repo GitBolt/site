@@ -11,7 +11,7 @@ export const Footer = function Footer() {
     <footer className={styles.footer}>
       <div className={styles.glassBar}>
         <nav className={styles.icons} aria-label="Social links">
-          <Link href="https://twitter.com/0xBolt" passHref legacyBehavior>
+          <Link href="https://twitter.com/aabisbuilds" passHref legacyBehavior>
             <a target="_blank" rel="noopener noreferrer" aria-label="Aabis on X">
               <Image src={XIcon} height={18} width={18} alt="" />
             </a>
@@ -23,7 +23,7 @@ export const Footer = function Footer() {
             </a>
           </Link>
 
-          <Link href="https://linkedin.com/in/0xbolt" passHref legacyBehavior>
+          <Link href="https://linkedin.com/in/saabisa" passHref legacyBehavior>
             <a target="_blank" rel="noopener noreferrer" aria-label="Aabis on LinkedIn">
               <Image src={LinkedIn} height={18} width={18} alt="" />
             </a>

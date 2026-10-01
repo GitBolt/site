@@ -91,7 +91,7 @@ const experience: CardData[] = [
     title: 'SpaceXAI',
     subtitle: 'AI developer community lead · UIUC',
     description: 'Representing UIUC in SpaceXAI’s campus program through developer workshops, hackathons, build nights, and student collaborations.',
-    links: [{ label: 'role announcement', href: 'https://x.com/0xBolt/status/2091614481860231402' }],
+    links: [{ label: 'role announcement', href: 'https://x.com/aabisbuilds/status/2091614481860231402' }],
   },
   {
     logo: '/logos/spicenet.jpg',
@@ -120,7 +120,7 @@ const experience: CardData[] = [
     links: [
       { label: 'stellarsol on x', href: 'https://x.com/stellarsolapp' },
       { label: 'summer camp results', href: 'https://solana.com/news/solana-summer-camp-winners' },
-      { label: 'product demo', href: 'https://x.com/0xBolt/status/1547898009484402689' },
+      { label: 'product demo', href: 'https://x.com/aabisbuilds/status/1547898009484402689' },
       { label: 'launch thread', href: 'https://x.com/StellarSolApp/status/1544300773533962240' },
       { label: 'the information', href: 'https://www.theinformation.com/articles/here-come-the-zoomers-silicon-valley-greets-a-new-generation-of-teen-founders' },
     ],
@@ -146,7 +146,7 @@ const experience: CardData[] = [
         captions: '/captions/stellarsol-demo.vtt',
         alt: 'StellarSOL browser extension purchasing an item from Flipkart with USDC',
         caption: 'Buying from Flipkart with USDC through StellarSOL · product demo',
-        href: 'https://x.com/0xBolt/status/1547898009484402689',
+        href: 'https://x.com/aabisbuilds/status/1547898009484402689',
       },
     ],
   },
@@ -180,7 +180,7 @@ const experience: CardData[] = [
     subtitle: 'developer relations intern · 4 university workshops',
     description: 'Designed and delivered four hands-on developer workshops across four universities, drawing 1,000 registrations and helping participants mint more than 300 NFTs. The curriculum included a first Solana program, a bank simulator, and a poll application.',
     links: [
-      { label: 'workshop metrics', href: 'https://x.com/0xBolt/status/1696191692330676230' },
+      { label: 'workshop metrics', href: 'https://x.com/aabisbuilds/status/1696191692330676230' },
       { label: 'bank workshop', href: 'https://github.com/GitBolt/solana-bank-workshop' },
       { label: 'poll workshop', href: 'https://github.com/GitBolt/solana-poll' },
     ],
@@ -246,7 +246,7 @@ const projects: CardData[] = [
       captions: '/captions/superteam-ctf-live.vtt',
       alt: 'Participants solving challenges at the first Superteam CTF',
       caption: 'Live competition floor · first Superteam CTF · 5 sec',
-      href: 'https://x.com/0xBolt/status/1948962210811687093',
+      href: 'https://x.com/aabisbuilds/status/1948962210811687093',
     }],
   },
   {
@@ -272,7 +272,7 @@ const projects: CardData[] = [
     subtitle: 'discord sports betting · $3k prize · built in 4 hours',
     description: 'Built a Discord-native sports-betting experience on Monaco Protocol in four hours. Won the Sandstorm UX track, a $3,000 prize, and two Breakpoint tickets.',
     links: [
-      { label: 'my launch thread', href: 'https://x.com/0xBolt/status/1621828714152730624' },
+      { label: 'my launch thread', href: 'https://x.com/aabisbuilds/status/1621828714152730624' },
       { label: 'PR Newswire release', href: 'https://www.prnewswire.com/news-releases/betdex-announces-disbet-as-winner-of-solana-hackathon-sports-betting-ux-track-301740713.html' },
       { label: 'source code', href: 'https://github.com/GitBolt/disbet' },
     ],
@@ -312,7 +312,7 @@ const projects: CardData[] = [
     links: [
       { label: 'source code', href: 'https://github.com/GitBolt/soltrek' },
       { label: 'on-chain program', href: 'https://github.com/GitBolt/soltrek-program' },
-      { label: 'accelerator acceptance', href: 'https://x.com/0xBolt/status/1654358846511501312' },
+      { label: 'accelerator acceptance', href: 'https://x.com/aabisbuilds/status/1654358846511501312' },
     ],
   },
 ];
@@ -368,7 +368,7 @@ const Index: NextPage = function Index() {
           <p className={styles.dmsText}>
             my DMs are always open on
             {' '}
-            <a href="https://twitter.com/0xBolt" target="_blank" rel="noreferrer">X</a>
+            <a href="https://twitter.com/aabisbuilds" target="_blank" rel="noreferrer">X</a>
             {' · '}
             <a href="mailto:hi@aab.is">hi@aab.is</a>
           </p>
