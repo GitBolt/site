@@ -353,7 +353,9 @@ const Index: NextPage = function Index() {
             target="_blank"
             rel="noreferrer"
           >
-            engineering portfolio <span aria-hidden="true">↗</span>
+            engineering portfolio
+            {' '}
+            <span aria-hidden="true">↗</span>
           </a>
         </div>
 
