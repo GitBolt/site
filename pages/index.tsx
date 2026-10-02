@@ -347,6 +347,14 @@ const Index: NextPage = function Index() {
               <span>UIUC</span>
             </a>
           </p>
+          <a
+            className={styles.portfolioLink}
+            href="/engineering-portfolio.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            engineering portfolio <span aria-hidden="true">↗</span>
+          </a>
         </div>
 
         <section className={styles.section} aria-labelledby="aerospace-heading">
