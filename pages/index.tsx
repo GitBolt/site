@@ -131,10 +131,10 @@ const aerospace: CardData[] = [
 
 const experience: CardData[] = [
   {
-    logo: '/logos/spacexai.png',
-    title: 'SpaceXAI',
+    logo: '/logos/spacexsi.jpg',
+    title: 'SpaceXSI',
     subtitle: 'AI developer community lead · UIUC',
-    description: 'Representing UIUC in SpaceXAI’s campus program through developer workshops, hackathons, build nights, and student collaborations.',
+    description: 'Representing UIUC in SpaceXSI’s campus program through developer workshops, hackathons, build nights, and student collaborations.',
     links: [{ label: 'role announcement', href: 'https://x.com/aabisbuilds/status/2091614481860231402' }],
   },
   {
