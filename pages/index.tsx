@@ -2,15 +2,59 @@ import React from 'react';
 import Image from 'next/image';
 import styles from '@/styles/Index.module.scss';
 import { Footer } from '@/components/Footer';
-import { CardData, ExpandableCard } from '@/components/ExpandableCard';
+import { CardData, CardGrid } from '@/components/ExpandableCard';
+import { Arrow } from '@/components/Arrow';
 import type { NextPage } from 'next';
 import { PageHead } from '@/components/Head';
 
 const aerospace: CardData[] = [
   {
+    logo: '/logos/dpi.png',
+    title: 'Resonance',
+    subtitle: 'rotating detonation rocket engine · founder',
+    description: 'Founded Detonation Propulsion at Illinois, where I lead a 15+ person student team building Resonance: a liquid-oxygen / liquid-methane rotating detonation rocket engine (RDRE). I led system sizing and the fluid architecture across feed, purge, ignition, and cooling. It’s sized for the 2 kN class and hasn’t fired yet, so detonation and thrust are still to be demonstrated.',
+    links: [
+      { label: 'Resonance project', href: 'https://www.rdrelab.com/project' },
+      { label: 'Detonation Propulsion at Illinois', href: 'https://www.rdrelab.com' },
+    ],
+    media: [
+      {
+        src: '/media/projects/resonance-gen1-cad.jpg',
+        width: 1770,
+        height: 1344,
+        alt: 'Exploded CAD view of the Resonance Gen 1 rotating detonation engine assembly',
+        caption: 'Resonance Gen 1 · exploded engine CAD',
+      },
+      {
+        src: '/media/projects/resonance-gen1-pid.jpg',
+        width: 1888,
+        height: 1622,
+        alt: 'Resonance Gen 1 propulsion and cooling system piping and instrumentation diagram',
+        caption: 'Resonance Gen 1 · fluid-system P&ID',
+      },
+    ],
+  },
+  {
+    logo: '/logos/airwatch.svg',
+    title: 'AirWatch',
+    subtitle: 'low-altitude air traffic map · DFW + Austin',
+    description: 'Built a Python/Polars/rasterio pipeline and MapLibre/deck.gl map from one week of public ADS-B archives across DFW and Austin. Terrain-corrected heights to AGL, then grouped traffic by H3 cell, altitude band, aircraft type, and hour. In DFW, 82% of 1,275 observed aircraft-hours below 1,200 ft fell within 3 NM of a public-use runway. The map generates a 10-mile traffic brief for any point.',
+    links: [
+      { label: 'open the live map', href: 'https://zipline-airspace.vercel.app' },
+      { label: 'methodology and source', href: 'https://github.com/GitBolt/zipline-airspace' },
+    ],
+    media: [{
+      src: '/media/projects/airwatch-dfw-map.jpg',
+      width: 1503,
+      height: 900,
+      alt: 'Zipline Airspace interactive map and traffic summary for the Dallas–Fort Worth area',
+      caption: 'AirWatch · DFW low-altitude traffic map and 10-mile brief',
+    }],
+  },
+  {
     logo: '/logos/lri.png',
     title: 'Liquid Rocketry at Illinois',
-    subtitle: 'liquid rocket engine testing + team leadership',
+    subtitle: 'liquid rocket engine · built + hotfired',
     description: 'Built and tested feed-system hardware for RAND-E, our student-developed liquid bipropellant rocket engine test-stand. Contributed to tube fabrication, plumbing, water-flow, cold-flow, and hotfire operations. Also rebuilt the team website and later served as the team\'s Administrative Director.',
     links: [
       { label: 'team website', href: 'https://www.liquidrocket.org' },
@@ -48,7 +92,7 @@ const aerospace: CardData[] = [
   {
     logo: '/logos/quadcopter.jpg',
     title: 'Carbon-fiber quadcopter',
-    subtitle: 'personal drone build · 2026',
+    subtitle: 'personal build · 2 kg · flight tested',
     description: 'Built a roughly 2 kg carbon-fiber quadcopter. Integrated the airframe, motors, power supply, radio, and flight-control systems before iterating through bench and outdoor flight tests.',
     links: [],
     media: [
@@ -72,14 +116,14 @@ const aerospace: CardData[] = [
   {
     logo: '/logos/anduril.png',
     title: 'Anduril AI Grand Prix',
-    subtitle: 'autonomous drone racing · spring 2026',
+    subtitle: 'autonomous drone racing · cleared round 1',
     description: 'Built a GPS-denied vision and control stack for Anduril’s autonomous drone-racing competition using OpenCV, IMU guidance, and a racing-line controller. Advanced past Round 1 with no crashes in the evaluated runs.',
     links: [{ label: 'ai grand prix', href: 'https://www.anduril.com/news/anduril-launches-the-ai-grand-prix-a-global-autonomous-drone-race' }],
   },
   {
     logo: '/logos/nmcad.png',
     title: 'NMCAD Lab',
-    subtitle: 'aerospace materials research intern · IISc',
+    subtitle: 'aerospace materials research · IISc',
     description: 'Developed a k-nearest-neighbor analyzer for syntactic foam, a lightweight composite used in aerospace and marine structures, and rebuilt the lab website during a research internship at the Indian Institute of Science.',
     links: [],
   },
@@ -96,7 +140,7 @@ const experience: CardData[] = [
   {
     logo: '/logos/spicenet.jpg',
     title: 'Spicenet',
-    subtitle: 'founding engineer · blockchain infrastructure',
+    subtitle: 'founding engineer · $5M+ raised · 30k+ users',
     description: 'Built Rust trading vaults, rollup infrastructure, and the TypeScript SDK for the core product, SpiceFlow. The SDK powered applications for 30,000+ users.',
     links: [
       { label: 'spicenet', href: 'https://spicenet.io' },
@@ -115,7 +159,7 @@ const experience: CardData[] = [
   {
     logo: '/logos/stellarsol.jpg',
     title: 'StellarSOL',
-    subtitle: 'crypto payments founder · 2nd of 750',
+    subtitle: 'crypto payments · co-founder · $50k raised',
     description: 'Co-founded a Solana payments product and led its engineering through the Summer Camp hackathon, placing second in the Payments track among 750 submissions. StellarSOL later received a Solana Foundation grant and I was featured by The Information.',
     links: [
       { label: 'stellarsol on x', href: 'https://x.com/stellarsolapp' },
@@ -170,14 +214,14 @@ const experience: CardData[] = [
   {
     logo: '/logos/summer.svg',
     title: 'Solana Summer Fellowship',
-    subtitle: 'builder program mentor · $100k sponsorships',
+    subtitle: 'builder program mentor · $100k sponsored',
     description: 'Organized and mentored an eight-week program for 42 builders selected from 583 applicants across 15 countries, helping run the curriculum, technical sessions, and project support.',
     links: [{ label: 'fellowship archive', href: 'https://summer.superteam.fun' }],
   },
   {
     logo: '/logos/solana.png',
     title: 'Solana Foundation',
-    subtitle: 'developer relations intern · 4 university workshops',
+    subtitle: 'devrel intern · 1,000 workshop signups',
     description: 'Designed and delivered four hands-on developer workshops across four universities, drawing 1,000 registrations and helping participants mint more than 300 NFTs. The curriculum included a first Solana program, a bank simulator, and a poll application.',
     links: [
       { label: 'workshop metrics', href: 'https://x.com/aabisbuilds/status/1696191692330676230' },
@@ -198,7 +242,7 @@ const projects: CardData[] = [
   {
     logo: '/logos/pythia.jpg',
     title: 'Pythia Markets',
-    subtitle: 'prediction markets · $18k hackathon winner',
+    subtitle: 'private prediction markets · $18k won',
     description: 'Built the Solana program and led the Arcium confidential-computation integration for private prediction markets. Won the $10,000 University Prize and $8,000 Arcium track among 1,576 submissions.',
     links: [
       { label: 'Colosseum winner announcement', href: 'https://blog.colosseum.com/announcing-the-winners-of-the-solana-cypherpunk-hackathon/#university-award' },
@@ -209,7 +253,7 @@ const projects: CardData[] = [
   {
     logo: '/logos/swift.webp',
     title: 'AsymmED',
-    subtitle: 'apple swift student challenge winner · built in 4 days',
+    subtitle: 'Apple Swift Student Challenge winner',
     description: 'Built an interactive app explaining asymmetric encryption after learning Swift from scratch in four days, developing remotely on a friend\'s Mac over TeamViewer.',
     links: [
       { label: 'winner profile', href: 'https://www.wwdcscholars.com/s/19C9A545-D5DF-451B-963D-382EC0AFE370/2023' },
@@ -227,7 +271,7 @@ const projects: CardData[] = [
   {
     logo: '/logos/superteam-ctf-36.png',
     title: 'Superteam CTF',
-    subtitle: 'crypto security competition · $10k+ prizes',
+    subtitle: 'designed all challenges · $10k+ prizes',
     description: 'Designed all 14 cryptography, smart-contract, reverse-engineering, and systems challenges for the first in-person competition at Microsoft Bengaluru, then returned as an organizer for the second edition.',
     links: [
       { label: 'play ctf', href: 'https://superteamctf.vercel.app' },
@@ -252,14 +296,14 @@ const projects: CardData[] = [
   {
     logo: '/logos/catwatch.png',
     title: 'CatWatch',
-    subtitle: 'drone inspection toolkit · hackathon project',
+    subtitle: 'drone inspection toolkit · HackIllinois',
     description: 'Built a Python toolkit for drone and camera-based industrial inspection at HackIllinois, combining real-time vision models with damaged-part detection and a 3D defect viewer.',
     links: [{ label: 'source code', href: 'https://github.com/GitBolt/catwatch' }],
   },
   {
     logo: '/logos/mbc.png',
     title: 'Flume + OptionsFi',
-    subtitle: 'finance tools · 2 hackathon prizes · $5k total',
+    subtitle: 'DeFi tools · 2 hackathon prizes · $5k',
     description: 'Built Flume, a visual interface for composing DeFi actions, and helped ship OptionsFi during the same overnight sprint. The two projects placed fourth and second at Midwest Blockchain Conference 2025.',
     links: [
       { label: 'flume source code', href: 'https://github.com/GitBolt/flume' },
@@ -269,7 +313,7 @@ const projects: CardData[] = [
   {
     logo: '/logos/discord.png',
     title: 'Disbet',
-    subtitle: 'discord sports betting · $3k prize · built in 4 hours',
+    subtitle: 'discord sports betting · $3k in 4 hours',
     description: 'Built a Discord-native sports-betting experience on Monaco Protocol in four hours. Won the Sandstorm UX track, a $3,000 prize, and two Breakpoint tickets.',
     links: [
       { label: 'my launch thread', href: 'https://x.com/aabisbuilds/status/1621828714152730624' },
@@ -280,7 +324,7 @@ const projects: CardData[] = [
   {
     logo: '/logos/solathon.svg',
     title: 'Solathon',
-    subtitle: 'python blockchain toolkit · 150k+ downloads',
+    subtitle: 'python SDK for Solana · 150k+ downloads',
     description: 'Built and maintained an open-source Python SDK for Solana RPCs and transactions. 150,000+ downloads and a $3,000 development grant.',
     links: [
       { label: 'documentation', href: 'https://solathon.vercel.app' },
@@ -294,7 +338,7 @@ const projects: CardData[] = [
   {
     logo: '/logos/salt-36.png',
     title: 'Salt Analysis',
-    subtitle: 'chemistry learning tool · ~100 daily unique users',
+    subtitle: 'chemistry lab tool · ~100 daily users',
     description: 'Turned the qualitative salt-analysis flowchart into a guided interactive workflow for chemistry labs. ~100 daily unique users and 23,000+ page views across 102 countries.',
     links: [
       { label: 'open app', href: 'https://saltanalysis.com' },
@@ -307,7 +351,7 @@ const projects: CardData[] = [
   {
     logo: '/logos/soltrek.png',
     title: 'SOL Trek',
-    subtitle: 'no-code blockchain learning playground',
+    subtitle: 'no-code Solana playground · $6k grant',
     description: 'Built a block-based environment for learning how Solana programs and transactions fit together. Received a $6,000 Solana Foundation grant.',
     links: [
       { label: 'source code', href: 'https://github.com/GitBolt/soltrek' },
@@ -318,12 +362,6 @@ const projects: CardData[] = [
 ];
 
 const Index: NextPage = function Index() {
-  const renderCards = (cards: CardData[], variant: 'work' | 'project') => (
-    <div className={styles.chipGrid}>
-      {cards.map((card) => <ExpandableCard key={card.title} card={card} variant={variant} />)}
-    </div>
-  );
-
   return (
     <div className={styles.index}>
       <PageHead
@@ -354,24 +392,23 @@ const Index: NextPage = function Index() {
             rel="noreferrer"
           >
             engineering portfolio
-            {' '}
-            <span aria-hidden="true">↗</span>
+            <Arrow />
           </a>
         </div>
 
         <section className={styles.section} aria-labelledby="aerospace-heading">
           <h2 id="aerospace-heading" className={styles.sectionLabel}>aerospace</h2>
-          {renderCards(aerospace, 'work')}
+          <CardGrid cards={aerospace} />
         </section>
 
         <section className={styles.section} aria-labelledby="work-heading">
           <h2 id="work-heading" className={styles.sectionLabel}>work</h2>
-          {renderCards(experience, 'work')}
+          <CardGrid cards={experience} />
         </section>
 
         <section className={styles.section} aria-labelledby="projects-heading">
           <h2 id="projects-heading" className={styles.sectionLabel}>projects</h2>
-          {renderCards(projects, 'project')}
+          <CardGrid cards={projects} />
         </section>
 
         <div className={styles.section}>

@@ -11,11 +11,16 @@
   --text-muted: #8993a3;
   --text-meta: #697485;
   --accent: #bd7968;
+  --accent-soft: #d2a093;
   --focus-ring: #95a9da;
   --content-width: 760px;
   --page-gutter: clamp(14px, 3vw, 20px);
   --radius-control: 7px;
   --radius-surface: 10px;
+  --card-gap: 8px;
+  --ease-out: cubic-bezier(0.32, 0.72, 0, 1);
+  --ease-expand: cubic-bezier(0.4, 0, 0.2, 1);
+  --expand-duration: 380ms;
 }
 
 html {

@@ -5,6 +5,7 @@ import { createPortal } from 'react-dom';
 import Image from 'next/image';
 import styles from '@/styles/Index.module.scss';
 import { inter } from '@/styles/fonts';
+import { Arrow } from '@/components/Arrow';
 
 export type CardLink = { label: string; href: string };
 
@@ -39,7 +40,6 @@ export type CardData = {
   media?: CardMedia[];
 };
 
-type ExpandableCardProps = { card: CardData; variant: 'work' | 'project' };
 type ModalDialogElement = HTMLDialogElement & { showModal: () => void };
 
 const Media = function Media({ item }: { item: CardMedia }) {
@@ -113,7 +113,7 @@ const Media = function Media({ item }: { item: CardMedia }) {
         {item.href && item.type === 'video' ? (
           <a href={item.href} target="_blank" rel="noreferrer">
             {item.caption}
-            <span aria-hidden="true"> ↗</span>
+            <Arrow />
           </a>
         ) : item.caption}
       </figcaption>
@@ -164,52 +164,139 @@ const Media = function Media({ item }: { item: CardMedia }) {
   );
 };
 
-export const ExpandableCard = function ExpandableCard({ card, variant }: ExpandableCardProps) {
-  return (
-    <details className={`${styles.card} ${variant === 'project' ? styles.project : ''}`}>
-      <summary className={styles.cardSummary}>
-        <Image
-          className={styles.cardLogo}
-          src={card.logo}
-          width={18}
-          height={18}
-          sizes="18px"
-          alt=""
-          loading="lazy"
-          unoptimized={card.logo.endsWith('.svg') || card.logo.endsWith('.ico')}
-        />
-        <span className={styles.cardHeading}>
-          <span className={styles.cardTitle}>{card.title}</span>
-          <span className={styles.cardSubtitle}>{card.subtitle}</span>
-        </span>
-        <span className={styles.cardHint} aria-hidden="true">
-          <span>details</span>
-          <svg viewBox="0 0 16 16" fill="none">
-            <path d="M4 6l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        </span>
-      </summary>
+const PANEL_GAP = 8;
+const VIEWPORT_MARGIN = 16;
 
-      <div className={styles.cardDetails}>
-        <div className={styles.cardCopy}>
-          <p>{card.description}</p>
-          {card.links.length > 0 && (
-            <div className={styles.cardLinks}>
-              {card.links.map((link) => (
-                <a key={link.href} href={link.href} target="_blank" rel="noreferrer">
-                  {link.label}
-                  <span aria-hidden="true"> ↗</span>
-                </a>
-              ))}
+type PanelProps = {
+  card: CardData;
+  isOpen: boolean;
+  panelId: string;
+  cardId: string;
+  row: number;
+};
+
+const Panel = function Panel({
+  card, isOpen, panelId, cardId, row,
+}: PanelProps) {
+  const surfaceRef = useRef<HTMLDivElement>(null);
+  // Media mounts on first open so closed cards never fetch images or posters.
+  const [hasOpened, setHasOpened] = useState(false);
+  if (isOpen && !hasOpened) setHasOpened(true);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const trigger = document.getElementById(cardId);
+    const surface = surfaceRef.current;
+    if (!trigger || !surface) return;
+
+    // Bring the whole panel into view while it grows, without scrolling its card away.
+    const triggerRect = trigger.getBoundingClientRect();
+    const finalBottom = triggerRect.bottom + PANEL_GAP + surface.offsetHeight + VIEWPORT_MARGIN;
+    const overflow = finalBottom - window.innerHeight;
+    const room = triggerRect.top - VIEWPORT_MARGIN;
+    if (overflow <= 0 || room <= 0) return;
+
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollBy({ top: Math.min(overflow, room), behavior: reduceMotion ? 'auto' : 'smooth' });
+  }, [isOpen, cardId]);
+
+  return (
+    <div
+      id={panelId}
+      className={styles.panel}
+      role="region"
+      aria-labelledby={cardId}
+      data-open={isOpen}
+      style={{ '--row': row } as React.CSSProperties}
+    >
+      <div className={styles.panelClip}>
+        <div ref={surfaceRef} className={styles.panelSurface}>
+          <div className={styles.cardCopy}>
+            <p>{card.description}</p>
+            {card.links.length > 0 && (
+              <div className={styles.cardLinks}>
+                {card.links.map((link) => (
+                  <a key={link.href} href={link.href} target="_blank" rel="noreferrer">
+                    {link.label}
+                    <Arrow />
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+          {hasOpened && card.media && card.media.length > 0 && (
+            <div className={styles.mediaRail} role="group" aria-label={`${card.title} media`}>
+              {card.media.map((item) => <Media key={item.src} item={item} />)}
             </div>
           )}
         </div>
-        {card.media && card.media.length > 0 && (
-          <div className={styles.mediaRail} role="group" aria-label={`${card.title} evidence`}>
-            {card.media.map((item) => <Media key={item.src} item={item} />)}
-          </div>
-        )}
       </div>
-    </details>
+    </div>
+  );
+};
+
+export const CardGrid = function CardGrid({ cards }: { cards: CardData[] }) {
+  const baseId = useId();
+  const [openCards, setOpenCards] = useState<ReadonlySet<number>>(() => new Set());
+
+  const toggle = (index: number) => {
+    // Two-column layout shares one panel slot per row, so a row shows one story at a time.
+    const twoColumns = window.matchMedia('(min-width: 801px)').matches;
+    const rowPartner = index % 2 === 0 ? index + 1 : index - 1;
+
+    setOpenCards((current) => {
+      const next = new Set(current);
+      if (next.has(index)) {
+        next.delete(index);
+      } else {
+        if (twoColumns) next.delete(rowPartner);
+        next.add(index);
+      }
+      return next;
+    });
+  };
+
+  return (
+    <div className={styles.cardGrid}>
+      {cards.map((card, index) => {
+        const isOpen = openCards.has(index);
+        const cardId = `${baseId}card-${index}`;
+        const panelId = `${baseId}panel-${index}`;
+        const row = Math.floor(index / 2);
+
+        return (
+          <React.Fragment key={card.title}>
+            <button
+              id={cardId}
+              type="button"
+              className={styles.card}
+              aria-expanded={isOpen}
+              aria-controls={panelId}
+              onClick={() => toggle(index)}
+              style={{ '--row': row } as React.CSSProperties}
+            >
+              <Image
+                className={styles.cardLogo}
+                src={card.logo}
+                width={18}
+                height={18}
+                sizes="18px"
+                alt=""
+                loading="lazy"
+                unoptimized={card.logo.endsWith('.svg') || card.logo.endsWith('.ico')}
+              />
+              <span className={styles.cardHeading}>
+                <span className={styles.cardTitle}>{card.title}</span>
+                <span className={styles.cardSubtitle}>{card.subtitle}</span>
+              </span>
+              <svg className={styles.cardChevron} viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M4 6l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+            <Panel card={card} isOpen={isOpen} panelId={panelId} cardId={cardId} row={row} />
+          </React.Fragment>
+        );
+      })}
+    </div>
   );
 };
