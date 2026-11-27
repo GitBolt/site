@@ -15,7 +15,9 @@ type Props = {
   }
 };
 
-const siteUrl = 'https://aab.is';
+// Must be the host that serves the site: aab.is only redirects here, and crawlers
+// drop cards whose image or canonical URL is a redirect.
+const siteUrl = 'https://aabis.dev';
 
 export const PageHead = function PageHead({
   title,
@@ -53,6 +55,7 @@ export const PageHead = function PageHead({
         </>
       )}
       <meta name="twitter:card" content={socialImageUrl ? 'summary_large_image' : 'summary'} />
+      <meta name="twitter:creator" content="@aabisbuilds" />
       <meta name="twitter:title" content={resolvedTitle} />
       <meta name="twitter:description" content={resolvedDescription} />
       {socialImageUrl && <meta name="twitter:image" content={socialImageUrl} />}
