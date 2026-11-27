@@ -15,9 +15,9 @@ type Props = {
   }
 };
 
-// Must be the host that serves the site: aab.is only redirects here, and crawlers
-// drop cards whose image or canonical URL is a redirect.
-const siteUrl = 'https://aabis.dev';
+// Must be the host that serves the site, never one that redirects: crawlers drop
+// cards whose image or canonical URL is a redirect. aabis.dev redirects here.
+const siteUrl = 'https://aab.is';
 
 export const PageHead = function PageHead({
   title,

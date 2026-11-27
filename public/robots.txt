@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aabis.dev/sitemap.xml
+Sitemap: https://aab.is/sitemap.xml
